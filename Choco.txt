@@ -1,0 +1,5 @@
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command " [System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+choco feature enable -n allowGlobalconfirmation
+
+choco install googlechrome unikey altap-salamander chocolateygui vlc k-litecodecpackfull mpc-hc-clsid2 sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns hijackthis shutup10 windowsxappremover lockhunter driverbooster linkshellextension samsung-magician notepadplusplus.install google-backup-and-sync evernote ublockorigin-chrome evernote-chrome pushbullet-chrome checkerplusforgmail-chrome google-translate-chrome disable-nvidia-telemetry nvidia-display-driver -y
