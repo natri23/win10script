@@ -28,13 +28,15 @@
 $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
-
+    "CreateRestorePoint",
+  
 	### External Program Setup
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	#"InstallAdobe",
 	"InstallTriApps",
 	#"InstallEverything",
 	#"InstallIrfanview",
+    #"InstallNvidiadriver",
 	#"Install7Zip",
 	#"InstallNotepadplusplus",
 	#"InstallMediaPlayerClassic",
@@ -74,7 +76,7 @@ $tweaks = @(
 	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
 	"DisableFirewall",            # "EnableFirewall",
 	#"DisableDefender",            # "EnableDefender",
-	"DisableDefenderCloud",       # "EnableDefenderCloud",
+	#"DisableDefenderCloud",       # "EnableDefenderCloud",
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
 	#"SetDEPOptOut",                 # "SetDEPOptIn",
 	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
@@ -111,7 +113,7 @@ $tweaks = @(
 	"DisableStickyKeys",            # "EnableStickyKeys",
 	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
-	"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
+	#"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
 	# "HideTaskbarSearch",
 	"ShowTaskbarSearchIcon",      # "ShowTaskbarSearchBox",
 	# "HideTaskView",                 # "ShowTaskView",
@@ -158,7 +160,7 @@ $tweaks = @(
 	"UninstallOneDrive",            # "InstallOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
-	 "UninstallWindowsStore",      # "InstallWindowsStore",
+	 #"UninstallWindowsStore",      # "InstallWindowsStore",
 	"DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
 	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
@@ -193,6 +195,12 @@ $tweaks = @(
 # Recommended Titus Programs
 #########
 
+Function CreateRestorePoint {
+  Write-Output "Creating Restore Point incase something bad happens"
+  Enable-ComputerRestore -Drive "C:\"
+  Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
+}
+
 Function InstallTitusProgs {
 	Write-Output "Installing Chocolatey"
 	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -222,6 +230,11 @@ Function InstallIrfanview {
 Function InstallTriApps {
 	Write-Output "Installing googlechrome unikey altap-salamander chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns"
 	choco install googlechrome unikey altap-salamander chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns
+}
+
+Function InstallNvidiadriver {
+	Write-Output "Installing disable-nvidia-telemetry nvidia-display-driver "
+	choco install disable-nvidia-telemetry nvidia-display-driver
 }
 
 Function InstallJava {
