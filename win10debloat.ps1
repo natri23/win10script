@@ -205,11 +205,11 @@ Function InstallTitusProgs {
 	Write-Output "Installing Chocolatey"
 	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 	choco install chocolatey-core.extension -y
-	Write-Output "Running O&O Shutup with Recommended Settings"
-	Import-Module BitsTransfer
-	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
-	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
-	./OOSU10.exe ooshutup10.cfg /quiet
+	#Write-Output "Running O&O Shutup with Recommended Settings"
+	#Import-Module BitsTransfer
+	#Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+	#Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
+	#./OOSU10.exe ooshutup10.cfg /quiet
 }
 
 Function InstallAdobe {
@@ -228,8 +228,8 @@ Function InstallIrfanview {
 }
 
 Function InstallTriApps {
-	Write-Output "Installing googlechrome unikey altap-salamander chocolateyguiÂ vlc sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns"
-	choco install googlechrome unikey altap-salamander chocolateyguiÂ vlc sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns
+	Write-Output "Installing googlechrome unikey altap-salamander chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns"
+	choco install googlechrome unikey altap-salamander chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns
 }
 
 Function InstallNvidiadriver {
