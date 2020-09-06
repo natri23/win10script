@@ -228,8 +228,8 @@ Function InstallIrfanview {
 }
 
 Function InstallTriApps {
-	Write-Output "Installing googlechrome unikey altap-salamander chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns"
-	choco install googlechrome unikey altap-salamander chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview teamviewer ccleaner autoruns
+	Write-Output "Installing googlechrome unikey chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview"
+	choco install googlechrome unikey chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview
 }
 
 Function InstallNvidiadriver {
