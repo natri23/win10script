@@ -495,9 +495,9 @@ $powertoys.Add_Click({
 })
 
 $essentialtweaks.Add_Click({ 
-    Write-Host "Creating Restore Point incase something bad happens"
-    Enable-ComputerRestore -Drive "C:\"
-    Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
+    #Write-Host "Creating Restore Point incase something bad happens"
+    #Enable-ComputerRestore -Drive "C:\"
+    #Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
 
     Write-Host "Running O&O Shutup with Recommended Settings"
 	Import-Module BitsTransfer
@@ -799,9 +799,9 @@ $cortana.Add_Click({
 })
 
 $securitylow.Add_Click({ 
-    Write-Host "Lowering UAC level..."
-	Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "ConsentPromptBehaviorAdmin" -Type DWord -Value 0
-	Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "PromptOnSecureDesktop" -Type DWord -Value 0
+#    Write-Host "Lowering UAC level..."
+#	Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "ConsentPromptBehaviorAdmin" -Type DWord -Value 0
+#	Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "PromptOnSecureDesktop" -Type DWord -Value 0
     Write-Host "Disabling Windows Defender..."
 	If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender")) {
 		New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Force | Out-Null
