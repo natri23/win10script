@@ -59,7 +59,7 @@ $brave.location                  = New-Object System.Drawing.Point(250,19)
 $brave.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $firefox                         = New-Object system.Windows.Forms.Button
-$firefox.text                    = "Firefox"
+$firefox.text                    = "Nvidia Drivers"
 $firefox.width                   = 150
 $firefox.height                  = 30
 $firefox.location                = New-Object System.Drawing.Point(250,61)
@@ -435,8 +435,8 @@ $brave.Add_Click({
 })
 
 $firefox.Add_Click({ 
-    Write-Host "Installing Firefox"
-    choco install firefox -y
+    Write-Host "Installing Nvidia Drivers"
+    choco install disable-nvidia-telemetry nvidia-display-driver -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
