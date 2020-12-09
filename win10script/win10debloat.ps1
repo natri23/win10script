@@ -79,15 +79,15 @@ $irfanview.height                = 30
 $irfanview.location              = New-Object System.Drawing.Point(417,19)
 $irfanview.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$adobereader                     = New-Object system.Windows.Forms.Button
-$adobereader.text                = "Adobe Reader DC"
-$adobereader.width               = 150
-$adobereader.height              = 30
-$adobereader.location            = New-Object System.Drawing.Point(417,61)
-$adobereader.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
+$everything                     = New-Object system.Windows.Forms.Button
+$everything.text                = "Everything"
+$everything.width               = 150
+$everything.height              = 30
+$everything.location            = New-Object System.Drawing.Point(417,61)
+$everything.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $notepad                         = New-Object system.Windows.Forms.Button
-$notepad.text                    = "Notepad++"
+$notepad.text                    = "Unikey"
 $notepad.width                   = 150
 $notepad.height                  = 30
 $notepad.location                = New-Object System.Drawing.Point(417,104)
@@ -122,14 +122,14 @@ $powertoys.location              = New-Object System.Drawing.Point(751,105)
 $powertoys.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $winterminal                     = New-Object system.Windows.Forms.Button
-$winterminal.text                = "Windows Terminal"
+$winterminal.text                = "Chocolatey GUI"
 $winterminal.width               = 150
 $winterminal.height              = 30
 $winterminal.location            = New-Object System.Drawing.Point(751,61)
 $winterminal.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $vscode                          = New-Object system.Windows.Forms.Button
-$vscode.text                     = "VS Code"
+$vscode.text                     = "SumatraPDF"
 $vscode.width                    = 150
 $vscode.height                   = 30
 $vscode.location                 = New-Object System.Drawing.Point(751,19)
@@ -416,7 +416,7 @@ $lightmode.location              = New-Object System.Drawing.Point(417,45)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
 $Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
+$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$everything,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -446,15 +446,15 @@ $irfanview.Add_Click({
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
-$adobereader.Add_Click({ 
-    Write-Host "Installing Adobe Reader DC"
-    choco install adobereader -y
+$everything.Add_Click({ 
+    Write-Host "Installing Everything"
+    choco install everything -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
 $notepad.Add_Click({ 
-    Write-Host "Installing Notepad++"
-    choco install notepadplusplus -y
+    Write-Host "Installing Unikey"
+    choco install unikey -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
@@ -477,14 +477,14 @@ $7zip.Add_Click({
 })
 
 $vscode.Add_Click({ 
-    Write-Host "Installing Visual Studio Code"
-    choco install vscode -y
+    Write-Host "Installing Sumatrapdf"
+    choco install sumatrapdf.install -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
 $winterminal.Add_Click({ 
-    Write-Host "Installing New Windows Terminal"
-    choco install microsoft-windows-terminal -y
+    Write-Host "Installing Chocolatey GUI"
+    choco install chocolateygui -y
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
