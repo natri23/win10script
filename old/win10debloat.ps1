@@ -229,7 +229,7 @@ Function InstallIrfanview {
 
 Function InstallTriApps {
 	Write-Output "Installing googlechrome unikey chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview"
-	choco install googlechrome unikey chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview
+	choco install googlechrome unikey chocolateygui vlc sumatrapdf.install 7zip.install everything irfanview -y
 }
 
 Function InstallNvidiadriver {
