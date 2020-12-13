@@ -11,3 +11,4 @@ My modifications:
  - No Show all tray icons
  - Remove BingWeather, StickyNotes, Windows.Photos
  - Add Unikey, Everything, SumatraPDF, ChocolateyGUI, Nvidia drivers
+ - No Disable Clipboard History from O&OShutup
