@@ -82,7 +82,6 @@ NetworkDiscovery -Enable,
 SmartActiveHours -Enable,
 DeviceRestartAfterUpdate -Enable
 <#start#>
-RecentlyAddedApps -Hide,
 AppSuggestions -Hide,
 RunCMDShortcut -Elevated,
 UnpinAllStartTiles,

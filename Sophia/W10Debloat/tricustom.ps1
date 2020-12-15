@@ -98,7 +98,6 @@ DeviceRestartAfterUpdate -Enable
 
 # Start
 
-RecentlyAddedApps -Hide
 AppSuggestions -Hide
 RunCMDShortcut -Elevated
 UnpinAllStartTiles
