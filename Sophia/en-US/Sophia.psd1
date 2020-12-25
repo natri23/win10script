@@ -8,7 +8,7 @@ OneDriveNotEmptyFolder                 = The "{0}" folder is not empty. Delete i
 OneDriveFileSyncShell64dllBlocked      = "{0}" is blocked. Delete it manually
 OneDriveInstalling                     = OneDrive is installing...
 OneDriveDownloading                    = Downloading OneDrive... ~33 MB
-ClearFolder                            = Delete all files in the "{0}" folder
+ClearFolder                            = Delete all files in the "{0}" folder?
 FilesBlocked                           = The following files are being blocked by third-party party apps. Remove them manually and continue
 TempNotEmpty                           = The "{0}" folder is not empty. Clear it manually
 WindowsFeaturesWindowTitle             = Windows features
@@ -85,5 +85,6 @@ NoInternetConnection                   = No Internet connection
 Select                                 = Select
 Skip                                   = Skip
 Skipped                                = Skipped
+SymbolicSkipped                        = Skipped creating a symbolic link
 Uninstall                              = Uninstall
 '@
