@@ -3,7 +3,7 @@ Remove-Module -Name Sophia -Force -ErrorAction Ignore
 Import-Module -Name $PSScriptRoot\Sophia.psd1 -PassThru -Force
 Import-LocalizedData -BindingVariable Global:Localization -FileName Sophia
 Check
-CreateRestorePoint
+#CreateRestorePoint
 
 # Privacy & Telemetry
 
