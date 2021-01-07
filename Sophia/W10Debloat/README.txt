@@ -1,8 +1,3 @@
-
-------------
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JLAMf'))
-------------
-
 File: README.TXT for Windows 10 Debloat tool GUI / Debloater (v1.3) from www.BenchTweakGaming.com
 Based on farag2 Windows 10 Sophia Script v5.2 (Nov 11, 2020): https://github.com/farag2/Windows-10-Sophia-Script
 
