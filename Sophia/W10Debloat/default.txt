@@ -49,7 +49,8 @@ JPEGWallpapersQuality -Max,
 TaskManagerWindow -Expanded,
 RestartNotification -Show,
 ShortcutsSuffix -Disable,
-PrtScnSnippingTool -Enable
+PrtScnSnippingTool -Enable,
+AppsLanguageSwitch -Disable
 
 <#onedrive#>
 
@@ -62,7 +63,6 @@ StorageSenseFrequency -Month,
 StorageSenseTempFiles -Enable,
 StorageSenseRecycleBin -Enable,
 Hibernate -Disable,
-TempPath -SystemDrive,
 Win32LongPathLimit -Disable,
 BSoDStopError -Enable,
 AdminApprovalMode -Disable,
@@ -71,14 +71,13 @@ DeliveryOptimization -Disable,
 WaitNetworkStartup -Enable,
 WindowsManageDefaultPrinter -Disable,
 WindowsFeatures -Disable,
-DisableWindowsCapabilities,
+WindowsCapabilities -Disable,
 UpdateMicrosoftProducts -Enable,
 BackgroundUWPApps -Disable,
 PowerManagementScheme -High,
 LatestInstalled.NET -Enable,
 PCTurnOffDevice -Disable,
 SetInputMethod -English,
-ChangeUserShellFolderLocation -Root,
 WinPrtScrFolder -Desktop,
 RecommendedTroubleshooting -Automatic,
 FoldersLaunchSeparateProcess -Enable,
@@ -120,9 +119,9 @@ GPUScheduling -Enable
 
 <#scheduled#>
 
-CreateCleanUpTask,
-CreateSoftwareDistributionTask,
-CreateTempTask
+CleanUpTask -Register,
+SoftwareDistributionTask -Register,
+TempTask -Register
 
 <#defender&security#>
 
@@ -168,6 +167,7 @@ PreviousVersionsPage -Hide
 
 <#other#>
 
-TaskbarSearch -Hide
+TaskbarSearch -Hide,
+SetUserShellFolderLocation -Root
 
 <#end#>

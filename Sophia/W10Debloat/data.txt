@@ -49,7 +49,8 @@ JPEGWallpapersQuality -Max,JPEGWallpapersQuality -Default,
 TaskManagerWindow -Expanded,TaskManagerWindow -Compact,
 RestartNotification -Show,RestartNotification -Hide,
 ShortcutsSuffix -Disable,ShortcutsSuffix -Enable,
-PrtScnSnippingTool -Enable,PrtScnSnippingTool -Disable
+PrtScnSnippingTool -Enable,PrtScnSnippingTool -Disable,
+AppsLanguageSwitch -Disable,AppsLanguageSwitch -Enable
 
 <#onedrive#>
 
@@ -62,7 +63,7 @@ StorageSenseFrequency -Month,StorageSenseFrequency -Default,
 StorageSenseTempFiles -Enable,StorageSenseTempFiles -Disable,
 StorageSenseRecycleBin -Enable,StorageSenseRecycleBin -Disable,
 Hibernate -Disable,Hibernate -Enable,
-TempPath -SystemDrive,TempPath -Default,
+TempFolder -SystemDrive,TempFolder -Default,
 Win32LongPathLimit -Disable,Win32LongPathLimit -Enable,
 BSoDStopError -Enable,BSoDStopError -Disable,
 AdminApprovalMode -Disable,AdminApprovalMode -Enable,
@@ -71,14 +72,13 @@ DeliveryOptimization -Disable,DeliveryOptimization -Enable,
 WaitNetworkStartup -Enable,WaitNetworkStartup -Disable,
 WindowsManageDefaultPrinter -Disable,WindowsManageDefaultPrinter -Enable,
 WindowsFeatures -Disable,WindowsFeatures -Enable,
-DisableWindowsCapabilities,LeaveAlone,
+WindowsCapabilities -Disable,WindowsCapabilities -Enable,
 UpdateMicrosoftProducts -Enable,UpdateMicrosoftProducts -Disable,
 BackgroundUWPApps -Disable,BackgroundUWPApps -Enable,
 PowerManagementScheme -High,PowerManagementScheme -Balanced,
 LatestInstalled.NET -Enable,LatestInstalled.NET -Disable,
 PCTurnOffDevice -Disable,PCTurnOffDevice -Enable,
 SetInputMethod -English,SetInputMethod -Default,
-ChangeUserShellFolderLocation -Root,ChangeUserShellFolderLocation -Default,
 WinPrtScrFolder -Desktop,WinPrtScrFolder -Default,
 RecommendedTroubleshooting -Automatic,RecommendedTroubleshooting -Default,
 FoldersLaunchSeparateProcess -Enable,FoldersLaunchSeparateProcess -Disable,
@@ -123,9 +123,9 @@ GPUScheduling -Enable,GPUScheduling -Disable
 
 <#scheduled#>
 
-CreateCleanUpTask,DeleteCleanUpTask,
-CreateSoftwareDistributionTask,DeleteSoftwareDistributionTask,
-CreateTempTask,DeleteTempTask
+CleanUpTask -Register,CleanUpTask -Delete,
+SoftwareDistributionTask -Register,SoftwareDistributionTask -Delete,
+TempTask -Register,TempTask -Delete
 
 <#defender&security#>
 
@@ -172,6 +172,7 @@ PreviousVersionsPage -Hide,PreviousVersionsPage -Show
 
 <#other#>
 
-TaskbarSearch -Hide,TaskbarSearch -SearchIcon,TaskbarSearch -SearchBox
+TaskbarSearch -Hide,TaskbarSearch -SearchIcon,TaskbarSearch -SearchBox,
+SetUserShellFolderLocation -Root,SetUserShellFolderLocation -Custom,SetUserShellFolderLocation -Default
 
 <#end#>

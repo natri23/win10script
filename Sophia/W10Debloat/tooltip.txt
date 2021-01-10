@@ -30,7 +30,7 @@ WhatsNewInWindows -Disable;Do not suggest ways I can finish setting up my device
 WhatsNewInWindows -Enable;Suggest ways I can finish setting up my device to get the most out of Windows (default value);
 TailoredExperiences -Disable;Do not offer tailored experiences based on the diagnostic data setting (current user only);
 TailoredExperiences -Enable;Offer tailored experiences based on the diagnostic data setting (default value);
-BingSearch -Disable;Disable Bing search in the Start Menu;
+BingSearch -Disable;Disable Bing search in the Start Menu (for the USA only);
 BingSearch -Enable;Enable Bing search in the Start Menu (current user only) (default value)
 
 <#ui&personal#>
@@ -95,7 +95,9 @@ RestartNotification -Hide;Do not show a notification when your PC requires a res
 ShortcutsSuffix -Disable;Do not add the "- Shortcut" suffix to the file name of created shortcuts (current user only);
 ShortcutsSuffix -Enable;Add the "- Shortcut" suffix to the file name of created shortcuts (current user only) (default value);
 PrtScnSnippingTool -Enable;Use the PrtScn button to open screen snipping (current user only);
-PrtScnSnippingTool -Disable;Do not use the PrtScn button to open screen snipping (current user only) (default value)
+PrtScnSnippingTool -Disable;Do not use the PrtScn button to open screen snipping (current user only) (default value);
+AppsLanguageSwitch -Disable;Let let use a different input method for each app window (current user only);
+AppsLanguageSwitch -Enable;Do not let use a different input method for each app window (current user only) (default value)
 
 <#onedrive#>
 
@@ -114,9 +116,9 @@ StorageSenseRecycleBin -Enable;Delete files in recycle bin if they have been the
 StorageSenseRecycleBin -Disable;Do not delete files in recycle bin if they have been there for over 30 days (current user only);
 Hibernate -Disable;Disable hibernation if the device is not a laptop;
 Hibernate -Enable;Enable hibernate (default value);
-TempPath -SystemDrive;Change the %TEMP% environment variable path to the %SystemDrive%\Temp (both machine-wide, and for the current user);
-TempPath -Default;Change %TEMP% environment variable path to the %LOCALAPPDATA%\Temp (both machine-wide, and for the current user) (default value);
-Win32LongPathLimit -Disable;Disable Windows 260 character path limit;
+TempFolder -SystemDrive;Change the %TEMP% environment variable path to "%SystemDrive%\Temp" (both machine-wide, and for the current user);
+TempFolder -Default;Change %TEMP% environment variable path to "%LOCALAPPDATA%\Temp" (both machine-wide, and for the current user) (default value);
+Win32LongPathLimit -Disable;Disable Windows 260 characters path limit;
 Win32LongPathLimit -Enable;Enable Windows 260 character path limit (default value);
 BSoDStopError -Enable;Display the Stop error information on the BSoD;
 BSoDStopError -Disable;Do not display the Stop error information on the BSoD (default value);
@@ -130,13 +132,14 @@ WaitNetworkStartup -Enable;Always wait for the network at computer startup and l
 WaitNetworkStartup -Disable;Never wait for the network at computer startup and logon for workgroup networks (default value);
 WindowsManageDefaultPrinter -Disable;Do not let Windows decide which printer should be the default one (current user only);
 WindowsManageDefaultPrinter -Enable;Let Windows decide which printer should be the default one (current user only) (default value);
-WindowsFeatures -Disable;Disable the following Windows features;
-WindowsFeatures -Enable;Enable Windows features (default value);
-DisableWindowsCapabilities;Disable Feature On Demand v2 (FODv2) capabilities using the pop-up dialog box;
+WindowsFeatures -Disable;Disable the Windows features using the pop-up dialog box that enables the user to select features to remove;
+WindowsFeatures -Enable;Enable the Windows features using the pop-up dialog box that enables the user to select features to remove;
+WindowsCapabilities -Disable;Disable Features On Demand v2 (FODv2) capabilities using the pop-up dialog box;
+WindowsCapabilities -Enable;Enable Feature On Demand v2 (FODv2) capabilities using the pop-up dialog box;
 UpdateMicrosoftProducts -Enable;Opt-in to Microsoft Update service, so to receive updates for other Microsoft products;
 UpdateMicrosoftProducts -Disable;Opt-out of Microsoft Update service, so not to receive updates for other Microsoft products (default value);
-BackgroundUWPApps -Disable;Do not let UWP apps run in the background except some (current user only);
-BackgroundUWPApps -Enable;Let UWP apps run in the background (current user only) (default value);
+BackgroundUWPApps -Disable;Do not let all UWP apps run in the background (current user only);
+BackgroundUWPApps -Enable;Let all UWP apps run in the background (current user only) (default value);
 PowerManagementScheme -High;Set the power management scheme on "High performance" if device is a desktop;
 PowerManagementScheme -Balanced;Set the power management scheme on "Balanced" (default value);
 LatestInstalled.NET -Enable;Use latest installed .NET runtime for all apps;
@@ -145,8 +148,6 @@ PCTurnOffDevice -Disable;Do not allow the computer (if device is not a laptop) t
 PCTurnOffDevice -Enable;Allow the computer to turn off the network adapters to save power (default value);
 SetInputMethod -English;Set the default input method to the English language;
 SetInputMethod -Default;Reset the default input method;
-ChangeUserShellFolderLocation -Root;Change the location of the user folders to any disks root of your choice using the interactive menu (current user only). User files or folders won't me moved to a new location;
-ChangeUserShellFolderLocation -Default;Change the location of the user folders to the default values (current user only).User files or folders won't me moved to the new location;
 WinPrtScrFolder -Desktop;Save screenshots by pressing Win+PrtScr to the Desktop folder (current user only);
 WinPrtScrFolder -Default;Save screenshots by pressing Win+PrtScr to the Pictures folder (current user only) (default value);
 RecommendedTroubleshooting -Automatic;Run troubleshooters automatically, then notify. In order this feature to work the OS level of diagnostic data gathering must be set to "Optional diagnostic data";
@@ -173,9 +174,9 @@ SmartActiveHours -Enable;Automatically adjust active hours for me based on daily
 SmartActiveHours -Disable;Do not automatically adjust active hours for me based on daily usage (default value);
 DeviceRestartAfterUpdate -Enable;Restart this device as soon as possible when a restart is required to install an update;
 DeviceRestartAfterUpdate -Disable;Do not restart this device as soon as possible when a restart is required to install an update (default value);
-WSL -Enable;Install the Windows Subsystem for Linux (WSL). https://github.com/farag2/Windows-10-Setup-Script/issues/43. https://github.com/microsoft/WSL/issues/5437;
+WSL -Enable;Install the Windows Subsystem for Linux (WSL). https://github.com/farag2/Windows-10-Sophia-Script/issues/43. https://github.com/microsoft/WSL/issues/5437;
 WSL -Disable;Uninstall the Windows Subsystem for Linux (WSL);
-EnableWSL2;Download and install the Linux kernel update package. Set WSL 2 as the default version when installing a new Linux distribution. Run the function only after WSL installed and PC restart. https://github.com/microsoft/WSL/issues/5437;
+EnableWSL2;Download and install the Linux kernel update package. Set WSL 2 as the default version when installing a new Linux distribution. Run the function only after WSL installed and PC restart. https://github.com/microsoft/WSL/issues/5437. https://github.com/farag2/Windows-10-Sophia-Script/issues/43;
 WSLSwap -Disable;Disable swap file in WSL. Use only if the %TEMP% environment variable path changed. https://github.com/microsoft/WSL/issues/5437;
 WSLSwap -Enable;Enable swap file in WSL. https://github.com/microsoft/WSL/issues/5437
 
@@ -188,7 +189,7 @@ AppSuggestions -Show;Show app suggestions in the Start menu (default value);
 RunCMDShortcut -Elevated;Run the Command Prompt shortcut from the Start menu as Administrator;
 RunCMDShortcut -NonElevated;Run the Command Prompt shortcut from the Start menu as user (default value);
 UnpinAllStartTiles;Unpin all the Start tiles;
-syspin;Test if syspin.exe is in a folder. Unless download it. http://www.technosys.net/products/utils/pintotaskbar. SHA256: 6967E7A3C2251812DD6B3FA0265FB7B61AADC568F562A98C50C345908C6E827;
+syspin;Test if syspin.exe is in a folder. Unless download it. http://www.technosys.net/products/utils/pintotaskbar. SHA256: 07D6C3A19A8E3E243E9545A41DD30A9EE1E9AD79CDD6D446C229D689E5AB574A;
 PinControlPanel;Pin the "Control Panel" shortcut to Start within syspin;
 PinDevicesPrinters;Pin the old-style "Devices and Printers" shortcut to Start within syspin;
 PinCommandPrompt;Pin the Command Prompt" shortcut to Start within syspin
@@ -198,7 +199,7 @@ PinCommandPrompt;Pin the Command Prompt" shortcut to Start within syspin
 UninstallUWPApps;Uninstall UWP apps using the pop-up dialog box that enables the user to select packages to remove. App packages will not be installed for new users if "Uninstall for All Users" is checked;
 InstallHEVC;Open Microsoft Store "HEVC Video Extensions from Device Manufacturer" page. The extension can be installed without Microsoft account for free instead of $0.99. "Movies & TV" app required;
 CortanaAutostart -Disable;Disable Cortana autostarting;
-CortanaAutostart -Enable;Disable Cortana autostarting (default value);
+CortanaAutostart -Enable;Enable Cortana autostarting (default value);
 CheckUWPAppsUpdates;Check for UWP apps updates
 
 <#gaming#>
@@ -208,14 +209,15 @@ XboxGameBar -Enable;Enable Xbox Game Bar (default value);
 XboxGameTips -Disable;Disable Xbox Game Bar tips;
 XboxGameTips -Enable;Enable Xbox Game Bar tips (default value);
 SetAppGraphicsPerformance;Set "High performance" in graphics performance preference for an app. Only with a dedicated GPU;
-GPUScheduling -Enable;Turn on hardware-accelerated GPU scheduling. Restart needed. Only with a dedicated GPU and WDDM verion is 2.7 or higher
+GPUScheduling -Enable;Turn on hardware-accelerated GPU scheduling. Restart needed. Only with a dedicated GPU and WDDM verion is 2.7 or higher;
+GPUScheduling -Disable;Turn off hardware-accelerated GPU scheduling (default value). Restart needed
 
 <#scheduled#>
 
-CreateCleanUpTask;Create a task to clean up unused files and Windows updates in the Task Scheduler. A minute before the task starts, a warning in the Windows action center will appear. The task runs every 90 days;
-DeleteCleanUpTask;Delete a task to clean up unused files and Windows updates in the Task Scheduler;
-CreateSoftwareDistributionTask;Create a task to clear the %SystemRoot%\SoftwareDistribution\Download folder in the Task Scheduler. The task runs on Thursdays every 4 weeks;
-DeleteSoftwareDistributionTask;Delete a task to clear the %SystemRoot%\SoftwareDistribution\Download folder in the Task Scheduler;
+CleanUpTask -Register;Create the "Windows Cleanup" task to clean up unused files and Windows updates in the Task Scheduler. A minute before the task starts, a warning in the Windows action center will appear. The task runs every 90 days;
+CleanUpTask -Delete;Delete the "Windows Cleanup" task to clean up unused files and Windows updates in the Task Scheduler;
+SoftwareDistributionTask -Register;Create the "SoftwareDistribution" task to clear the %SystemRoot%\SoftwareDistribution\Download folder in the Task Scheduler. The task runs on Thursdays every 4 weeks;
+SoftwareDistributionTask -Delete;Delete the "SoftwareDistribution" task to clear the %SystemRoot%\SoftwareDistribution\Download folder in the Task Scheduler;
 CreateTempTask;Create a task to clear the %TEMP% folder in the Task Scheduler. The task runs every 62 days;
 DeleteTempTask;Delete a task to clear the %TEMP% folder in the Task Scheduler
 
@@ -239,9 +241,9 @@ DismissMSAccount;Dismiss Microsoft Defender offer in the Windows Security about 
 DismissSmartScreenFilter;Dismiss Microsoft Defender offer in the Windows Security about turning on the SmartScreen filter for Microsoft Edge;
 AuditProcess -Enable;Enable events auditing generated when a process is created or starts;
 AuditProcess -Disable;Disable events auditing generated when a process is created or starts (default value);
-AuditCommandLineProcess -Enable;Include command line in process creation events. In order this feature to work events auditing must be enabled ("AuditProcess" function);
+AuditCommandLineProcess -Enable;Include command line in process creation events. In order this feature to work events auditing will be enabled ("AuditProcess -Enable" function);
 AuditCommandLineProcess -Disable;Do not include command line in process creation events (default value);
-EventViewerCustomView -Enable;Create "Process Creation" Event Viewer Custom View. In order this feature to work events auditing and command line in process creation events must be enabled. ("EnableAuditProcess" function);
+EventViewerCustomView -Enable;Create "Process Creation" Event Viewer Custom View. In order this feature to work events auditing ("AuditProcess -Enable" function) and command line in process creation events will be enabled;
 EventViewerCustomView -Disable;Remove "Process Creation" Event Viewer Custom View (default value);
 PowerShellModulesLogging -Enable;Enable logging for all Windows PowerShell modules;
 PowerShellModulesLogging -Disable;Disable logging for all Windows PowerShell modules (default value);
@@ -301,6 +303,9 @@ PreviousVersionsPage -Show;Show the "Previous Versions" tab from files and folde
 
 TaskbarSearch -Hide;Hide the search box or the search icon from the taskbar (current user only);
 TaskbarSearch -SearchIcon;Show the search box on the taskbar (current user only);
-TaskbarSearch -SearchBox;Show the search icon on the taskbar (current user only) (default value)
+TaskbarSearch -SearchBox;Show the search icon on the taskbar (current user only) (default value);
+SetUserShellFolderLocation -Root;Change the location of the user folders to any disks root of your choice using the interactive menu (current user only). User files or folders won't me moved to a new location;
+SetUserShellFolderLocation -Custom;Select a folder for the location of the user folders manually using a folder browser dialog (current user only). User files or folders won't me moved to a new location;
+SetUserShellFolderLocation -Default;Change the location of the user folders to the default values (current user only). User files or folders won't me moved to the new location
 
 <#end#>
