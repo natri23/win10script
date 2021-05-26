@@ -1,0 +1,1966 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210131120342
+Username: ADMIN\Admin
+RunAs User: ADMIN\Admin
+Configuration Name: 
+Machine: ADMIN (Microsoft Windows NT 10.0.17763.0)
+Host Application: powershell
+Process ID: 3244
+PSVersion: 5.1.17763.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.1
+BuildVersion: 10.0.17763.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is H:\Windows\win10script\Sophia\W10Debloat\Log-31.01.2021-12-03.txt
+
+AllowTelemetry : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Polic
+                 ies\DataCollection
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Polic
+                 ies
+PSChildName    : DataCollection
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Actions            : {MSFT_TaskExecAction}
+Author             : Microsoft Corporation
+Date               :
+Description        : Windows Error Reporting task to process queued reports.
+Documentation      :
+Principal          : MSFT_TaskPrincipal2
+SecurityDescriptor : D:(A;;FA;;;BA)(A;;FA;;;SY)(A;;FRFX;;;WD)
+Settings           : MSFT_TaskSettings3
+Source             : Microsoft Windows Error Reporting
+State              : Disabled
+TaskName           : QueueReporting
+TaskPath           : \Microsoft\Windows\Windows Error Reporting\
+Triggers           : {MSFT_TaskBootTrigger, MSFT_TaskTrigger, MSFT_TaskTrigger, MSFT_TaskTimeTrigger}
+URI                : \Microsoft\Windows\Windows Error Reporting\QueueReporting
+Version            : 1.5
+PSComputerName     :
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Windows Error Reporting
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows
+PSChildName  : Windows Error Reporting
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+NumberOfSIUFInPeriod : 0
+PSPath               : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules
+PSParentPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf
+PSChildName          : Rules
+PSDrive              : HKCU
+PSProvider           : Microsoft.PowerShell.Core\Registry
+
+VERBOSE: Displaying the dialog box...
+
+OptOut       : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows
+               NT\CurrentVersion\Winlogon\UserARSO\S-1-5-21-2731231695-30728081-1848745409-1001
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows
+               NT\CurrentVersion\Winlogon\UserARSO
+PSChildName  : S-1-5-21-2731231695-30728081-1848745409-1001
+PSDrive      : HKLM
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+HttpAcceptLanguageOptOut : 1
+PSPath                   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\International\User
+                           Profile
+PSParentPath             : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\International
+PSChildName              : User Profile
+PSDrive                  : HKCU
+PSProvider               : Microsoft.PowerShell.Core\Registry
+
+
+Enabled      : 0
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Advertis
+               ingInfo
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion
+PSChildName  : AdvertisingInfo
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+RomeSdkChannelUserAuthzPolicy : 0
+PSPath                        : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curren
+                                tVersion\CDP
+PSParentPath                  : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curren
+                                tVersion
+PSChildName                   : CDP
+PSDrive                       : HKCU
+PSProvider                    : Microsoft.PowerShell.Core\Registry
+
+
+SubscribedContent-310093Enabled : 0
+PSPath                          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion\ContentDeliveryManager
+PSParentPath                    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion
+PSChildName                     : ContentDeliveryManager
+PSDrive                         : HKCU
+PSProvider                      : Microsoft.PowerShell.Core\Registry
+
+
+SubscribedContent-338389Enabled : 1
+PSPath                          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion\ContentDeliveryManager
+PSParentPath                    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion
+PSChildName                     : ContentDeliveryManager
+PSDrive                         : HKCU
+PSProvider                      : Microsoft.PowerShell.Core\Registry
+
+
+SubscribedContent-338393Enabled : 0
+PSPath                          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion\ContentDeliveryManager
+PSParentPath                    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion
+PSChildName                     : ContentDeliveryManager
+PSDrive                         : HKCU
+PSProvider                      : Microsoft.PowerShell.Core\Registry
+
+
+SubscribedContent-353694Enabled : 0
+PSPath                          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion\ContentDeliveryManager
+PSParentPath                    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion
+PSChildName                     : ContentDeliveryManager
+PSDrive                         : HKCU
+PSProvider                      : Microsoft.PowerShell.Core\Registry
+
+
+SubscribedContent-353696Enabled : 0
+PSPath                          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion\ContentDeliveryManager
+PSParentPath                    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion
+PSChildName                     : ContentDeliveryManager
+PSDrive                         : HKCU
+PSProvider                      : Microsoft.PowerShell.Core\Registry
+
+
+SilentInstalledAppsEnabled : 0
+PSPath                     : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVe
+                             rsion\ContentDeliveryManager
+PSParentPath               : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVe
+                             rsion
+PSChildName                : ContentDeliveryManager
+PSDrive                    : HKCU
+PSProvider                 : Microsoft.PowerShell.Core\Registry
+
+
+ScoobeSystemSettingEnabled : 0
+PSPath                     : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVe
+                             rsion\UserProfileEngagement
+PSParentPath               : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVe
+                             rsion
+PSChildName                : UserProfileEngagement
+PSDrive                    : HKCU
+PSProvider                 : Microsoft.PowerShell.Core\Registry
+
+
+TailoredExperiencesWithDiagnosticDataEnabled : 0
+PSPath                                       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft
+                                               \Windows\CurrentVersion\Privacy
+PSParentPath                                 : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft
+                                               \Windows\CurrentVersion
+PSChildName                                  : Privacy
+PSDrive                                      : HKCU
+PSProvider                                   : Microsoft.PowerShell.Core\Registry
+
+
+DisableSearchBoxSuggestions : 1
+PSPath                      : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows
+                              \Explorer
+PSParentPath                : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows
+PSChildName                 : Explorer
+PSDrive                     : HKCU
+PSProvider                  : Microsoft.PowerShell.Core\Registry
+
+
+{20D04FE0-3AEA-1069-A2D8-08002B30309D} : 0
+PSPath                                 : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windo
+                                         ws\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel
+PSParentPath                           : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windo
+                                         ws\CurrentVersion\Explorer\HideDesktopIcons
+PSChildName                            : NewStartPanel
+PSDrive                                : HKCU
+PSProvider                             : Microsoft.PowerShell.Core\Registry
+
+
+AutoCheckSelect : 0
+PSPath          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                  rer\Advanced
+PSParentPath    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                  rer
+PSChildName     : Advanced
+PSDrive         : HKCU
+PSProvider      : Microsoft.PowerShell.Core\Registry
+
+
+Hidden       : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+               \Advanced
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+PSChildName  : Advanced
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+HideFileExt  : 0
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+               \Advanced
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+PSChildName  : Advanced
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+HideMergeConflicts : 1
+PSPath             : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Ex
+                     plorer\Advanced
+PSParentPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Ex
+                     plorer
+PSChildName        : Advanced
+PSDrive            : HKCU
+PSProvider         : Microsoft.PowerShell.Core\Registry
+
+
+LaunchTo     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+               \Advanced
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+PSChildName  : Advanced
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+ShowCortanaButton : 0
+PSPath            : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Exp
+                    lorer\Advanced
+PSParentPath      : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Exp
+                    lorer
+PSChildName       : Advanced
+PSDrive           : HKCU
+PSProvider        : Microsoft.PowerShell.Core\Registry
+
+
+ShowSyncProviderNotifications : 0
+PSPath                        : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curren
+                                tVersion\Explorer\Advanced
+PSParentPath                  : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curren
+                                tVersion\Explorer
+PSChildName                   : Advanced
+PSDrive                       : HKCU
+PSProvider                    : Microsoft.PowerShell.Core\Registry
+
+
+ShowTaskViewButton : 0
+PSPath             : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Ex
+                     plorer\Advanced
+PSParentPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Ex
+                     plorer
+PSChildName        : Advanced
+PSDrive            : HKCU
+PSProvider         : Microsoft.PowerShell.Core\Registry
+
+
+PeopleBand   : 0
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+               \Advanced\People
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+               \Advanced
+PSChildName  : People
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+ShowSecondsInSystemClock : 1
+PSPath                   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVers
+                           ion\Explorer\Advanced
+PSParentPath             : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVers
+                           ion\Explorer
+PSChildName              : Advanced
+PSDrive                  : HKCU
+PSProvider               : Microsoft.PowerShell.Core\Registry
+
+
+SnapAssist   : 0
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+               \Advanced
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+PSChildName  : Advanced
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+EnthusiastMode : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explor
+                 er\OperationStatusManager
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explor
+                 er
+PSChildName    : OperationStatusManager
+PSDrive        : HKCU
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+MinimizedStateTabletModeOff : 0
+PSPath                      : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentV
+                              ersion\Explorer\Ribbon
+PSParentPath                : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentV
+                              ersion\Explorer
+PSChildName                 : Ribbon
+PSDrive                     : HKCU
+PSProvider                  : Microsoft.PowerShell.Core\Registry
+
+
+ShellState   : {36, 0, 0, 0...}
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion
+PSChildName  : Explorer
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+ThisPCPolicy : Hide
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explore
+               r\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}\PropertyBag
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explore
+               r\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}
+PSChildName  : PropertyBag
+PSDrive      : HKLM
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+ShowFrequent : 0
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion
+PSChildName  : Explorer
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+ShowRecent   : 0
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion
+PSChildName  : Explorer
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+PenWorkspaceButtonDesiredVisibility : 0
+PSPath                              : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\
+                                      CurrentVersion\PenWorkspace
+PSParentPath                        : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\
+                                      CurrentVersion
+PSChildName                         : PenWorkspace
+PSDrive                             : HKCU
+PSProvider                          : Microsoft.PowerShell.Core\Registry
+
+
+AllItemsIconView : 0
+PSPath           : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Expl
+                   orer\ControlPanel
+PSParentPath     : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Expl
+                   orer
+PSChildName      : ControlPanel
+PSDrive          : HKCU
+PSProvider       : Microsoft.PowerShell.Core\Registry
+
+
+StartupPage  : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+               \ControlPanel
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
+PSChildName  : ControlPanel
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+NoNewAppAlert : 1
+PSPath        : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer
+PSParentPath  : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows
+PSChildName   : Explorer
+PSDrive       : HKLM
+PSProvider    : Microsoft.PowerShell.Core\Registry
+
+
+EnableFirstLogonAnimation : 0
+PSPath                    : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVe
+                            rsion\Policies\System
+PSParentPath              : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVe
+                            rsion\Policies
+PSChildName               : System
+PSDrive                   : HKLM
+PSProvider                : Microsoft.PowerShell.Core\Registry
+
+
+JPEGImportQuality : 100
+PSPath            : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Desktop
+PSParentPath      : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel
+PSChildName       : Desktop
+PSDrive           : HKCU
+PSProvider        : Microsoft.PowerShell.Core\Registry
+
+
+Id      : 8072
+Handles : 39
+CPU     : 0.03125
+SI      : 1
+Name    : Taskmgr
+
+
+Preferences  : {13, 0, 0, 0...}
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\TaskMana
+               ger
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion
+PSChildName  : TaskManager
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+RestartNotificationsAllowed2 : 1
+PSPath                       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\
+                               UX\Settings
+PSParentPath                 : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\
+                               UX
+PSChildName                  : Settings
+PSDrive                      : HKLM
+PSProvider                   : Microsoft.PowerShell.Core\Registry
+
+
+ShortcutNameTemplate : %s.lnk
+PSPath               : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\
+                       Explorer\NamingTemplates
+PSParentPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\
+                       Explorer
+PSChildName          : NamingTemplates
+PSDrive              : HKCU
+PSProvider           : Microsoft.PowerShell.Core\Registry
+
+
+PrintScreenKeyForSnippingEnabled : 1
+PSPath                           : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Keyboard
+PSParentPath                     : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel
+PSChildName                      : Keyboard
+PSDrive                          : HKCU
+PSProvider                       : Microsoft.PowerShell.Core\Registry
+
+
+01           : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters\StoragePolicy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters
+PSChildName  : StoragePolicy
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+2048         : 30
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters\StoragePolicy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters
+PSChildName  : StoragePolicy
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+04           : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters\StoragePolicy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters
+PSChildName  : StoragePolicy
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+08           : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters\StoragePolicy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters
+PSChildName  : StoragePolicy
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+256          : 30
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters\StoragePolicy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageS
+               ense\Parameters
+PSChildName  : StoragePolicy
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+
+LongPathsEnabled : 1
+PSPath           : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
+PSParentPath     : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
+PSChildName      : FileSystem
+PSDrive          : HKLM
+PSProvider       : Microsoft.PowerShell.Core\Registry
+
+
+DisplayParameters : 1
+PSPath            : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashContro
+                    l
+PSParentPath      : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
+PSChildName       : CrashControl
+PSDrive           : HKLM
+PSProvider        : Microsoft.PowerShell.Core\Registry
+
+
+ConsentPromptBehaviorAdmin : 0
+PSPath                     : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentV
+                             ersion\Policies\System
+PSParentPath               : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentV
+                             ersion\Policies
+PSChildName                : System
+PSDrive                    : HKLM
+PSProvider                 : Microsoft.PowerShell.Core\Registry
+
+
+EnableLinkedConnections : 1
+PSPath                  : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVers
+                          ion\Policies\System
+PSParentPath            : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVers
+                          ion\Policies
+PSChildName             : System
+PSDrive                 : HKLM
+PSProvider              : Microsoft.PowerShell.Core\Registry
+
+
+DownloadMode : 0
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_USERS\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\Delive
+               ryOptimization\Settings
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_USERS\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\Delive
+               ryOptimization
+PSChildName  : Settings
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+Delete-DeliveryOptimizationCache : The term 'Delete-DeliveryOptimizationCache' is not recognized as the name of a 
+cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify 
+that the path is correct and try again.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:4107 char:4
++             Delete-DeliveryOptimizationCache -Force
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Delete-DeliveryOptimizationCache:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Delete-DeliveryOptimizationCache : The term 'Delete-DeliveryOptimizationCache' is not recognized as the name of a
+cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify
+that the path is correct and try again.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:4107 char:4
++             Delete-DeliveryOptimizationCache -Force
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Delete-DeliveryOptimizationCache:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+LegacyDefaultPrinterMode : 1
+PSPath                   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows
+                           NT\CurrentVersion\Windows
+PSParentPath             : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows
+                           NT\CurrentVersion
+PSChildName              : Windows
+PSDrive                  : HKCU
+PSProvider               : Microsoft.PowerShell.Core\Registry
+
+VERBOSE: Displaying the dialog box...
+OK
+VERBOSE: Displaying the dialog box...
+The service cannot be started, either because it is disabled or because it has no enabled devices associated with it. 
+(Exception from HRESULT: 0x80070422)
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:4884 char:4
++             (New-Object -ComObject Microsoft.Update.ServiceManager).A ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], COMException
+    + FullyQualifiedErrorId : System.Runtime.InteropServices.COMException
+The service cannot be started, either because it is disabled or because it has no enabled devices associated with it.
+(Exception from HRESULT: 0x80070422)
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:4884 char:4
++             (New-Object -ComObject Microsoft.Update.ServiceManager).A ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], COMException
+    + FullyQualifiedErrorId : System.Runtime.InteropServices.COMException
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\1527c705-839a-4832-9118-54d4Bd6a0c89_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : 1527c705-839a-4832-9118-54d4Bd6a0c89_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\1527c705-839a-4832-9118-54d4Bd6a0c89_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : 1527c705-839a-4832-9118-54d4Bd6a0c89_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\E2A4F912-2574-4A75-9BB0-0D023378592B_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : E2A4F912-2574-4A75-9BB0-0D023378592B_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\E2A4F912-2574-4A75-9BB0-0D023378592B_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : E2A4F912-2574-4A75-9BB0-0D023378592B_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\InputApp_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : InputApp_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\InputApp_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : InputApp_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.AccountsControl_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.AccountsControl_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.AccountsControl_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.AccountsControl_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.AsyncTextService_8wekyb3d8bbwe
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.AsyncTextService_8wekyb3d8bbwe
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.AsyncTextService_8wekyb3d8bbwe
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.AsyncTextService_8wekyb3d8bbwe
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.BioEnrollment_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.BioEnrollment_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.BioEnrollment_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.BioEnrollment_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.CredDialogHost_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.CredDialogHost_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.CredDialogHost_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.CredDialogHost_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.ECApp_8wekyb3d8bbwe
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.ECApp_8wekyb3d8bbwe
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.ECApp_8wekyb3d8bbwe
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.ECApp_8wekyb3d8bbwe
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.PPIProjection_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.PPIProjection_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.PPIProjection_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.PPIProjection_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Win32WebViewHost_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Win32WebViewHost_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Win32WebViewHost_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Win32WebViewHost_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.Apprep.ChxApp_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.Apprep.ChxApp_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.Apprep.ChxApp_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.Apprep.ChxApp_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.AssignedAccessLockApp_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.AssignedAccessLockApp_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.AssignedAccessLockApp_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.AssignedAccessLockApp_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.CapturePicker_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.CapturePicker_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.CapturePicker_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.CapturePicker_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.NarratorQuickStart_8wekyb3d8bbwe
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.NarratorQuickStart_8wekyb3d8bbwe
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.NarratorQuickStart_8wekyb3d8bbwe
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.NarratorQuickStart_8wekyb3d8bbwe
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.OOBENetworkConnectionFlow_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.OOBENetworkConnectionFlow_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.OOBENetworkConnectionFlow_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.OOBENetworkConnectionFlow_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.ParentalControls_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.ParentalControls_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.ParentalControls_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.ParentalControls_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.PinningConfirmationDialog_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.PinningConfirmationDialog_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.PinningConfirmationDialog_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.PinningConfirmationDialog_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.Windows.XGpuEjectDialog_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.Windows.XGpuEjectDialog_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.Windows.XGpuEjectDialog_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.Windows.XGpuEjectDialog_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.WindowsCalculator_8wekyb3d8bbwe
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.WindowsCalculator_8wekyb3d8bbwe
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.WindowsCalculator_8wekyb3d8bbwe
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.WindowsCalculator_8wekyb3d8bbwe
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Microsoft.XboxGameCallableUI_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Microsoft.XboxGameCallableUI_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Microsoft.XboxGameCallableUI_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Microsoft.XboxGameCallableUI_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Windows.CBSPreview_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Windows.CBSPreview_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Windows.CBSPreview_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Windows.CBSPreview_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\windows.immersivecontrolpanel_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : windows.immersivecontrolpanel_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\windows.immersivecontrolpanel_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : windows.immersivecontrolpanel_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+Disabled     : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications\Windows.PrintDialog_cw5n1h2txyewy
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgrou
+               ndAccessApplications
+PSChildName  : Windows.PrintDialog_cw5n1h2txyewy
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisabledByUser : 1
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications\Windows.PrintDialog_cw5n1h2txyewy
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Backgr
+                 oundAccessApplications
+PSChildName    : Windows.PrintDialog_cw5n1h2txyewy
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+
+OnlyUseLatestCLR : 1
+PSPath           : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework
+PSParentPath     : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft
+PSChildName      : .NETFramework
+PSDrive          : HKLM
+PSProvider       : Microsoft.PowerShell.Core\Registry
+
+
+OnlyUseLatestCLR : 1
+PSPath           : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework
+PSParentPath     : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft
+PSChildName      : .NETFramework
+PSDrive          : HKLM
+PSProvider       : Microsoft.PowerShell.Core\Registry
+
+
+UserPreference : 3
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsMitigation
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft
+PSChildName    : WindowsMitigation
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+AllowTelemetry : 3
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Polic
+                 ies\DataCollection
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Polic
+                 ies
+PSChildName    : DataCollection
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+SeparateProcess : 1
+PSPath          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                  rer\Advanced
+PSParentPath    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                  rer
+PSChildName     : Advanced
+PSDrive         : HKCU
+PSProvider      : Microsoft.PowerShell.Core\Registry
+
+Set-WindowsReservedStorageState : The term 'Set-WindowsReservedStorageState' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:6330 char:5
++                 Set-WindowsReservedStorageState -State Disabled
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Set-WindowsReservedStorageState:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Set-WindowsReservedStorageState : The term 'Set-WindowsReservedStorageState' is not recognized as the name of a
+cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify
+that the path is correct and try again.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:6330 char:5
++                 Set-WindowsReservedStorageState -State Disabled
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Set-WindowsReservedStorageState:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+(Default)    :
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\Typelib\{8cec5860-07a1-11d9-b15e-
+               000d56bfe6ee}\1.0\0\win64
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Classes\Typelib\{8cec5860-07a1-11d9-b15e-
+               000d56bfe6ee}\1.0\0
+PSChildName  : win64
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+InitialKeyboardIndicators : 2147483650
+PSPath                    : Microsoft.PowerShell.Core\Registry::HKEY_USERS\.DEFAULT\Control Panel\Keyboard
+PSParentPath              : Microsoft.PowerShell.Core\Registry::HKEY_USERS\.DEFAULT\Control Panel
+PSChildName               : Keyboard
+PSProvider                : Microsoft.PowerShell.Core\Registry
+
+
+Flags        : 506
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Control Panel\Accessibility
+PSChildName  : StickyKeys
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+DisableAutoplay : 1
+PSPath          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                  rer\AutoplayHandlers
+PSParentPath    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                  rer
+PSChildName     : AutoplayHandlers
+PSDrive         : HKCU
+PSProvider      : Microsoft.PowerShell.Core\Registry
+
+
+Autorun      : 0
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVer
+               sion\Explorer\VolumeCaches\Thumbnail Cache
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVer
+               sion\Explorer\VolumeCaches
+PSChildName  : Thumbnail Cache
+PSDrive      : HKLM
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+RestartApps  : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows
+               NT\CurrentVersion\Winlogon
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+PSChildName  : Winlogon
+PSDrive      : HKCU
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+SmartActiveHoursState : 1
+PSPath                : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Sett
+                        ings
+PSParentPath          : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX
+PSChildName           : Settings
+PSDrive               : HKLM
+PSProvider            : Microsoft.PowerShell.Core\Registry
+
+
+IsExpedited  : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX
+PSChildName  : Settings
+PSDrive      : HKLM
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+SubscribedContent-338388Enabled : 0
+PSPath                          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion\ContentDeliveryManager
+PSParentPath                    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Curr
+                                  entVersion
+PSChildName                     : ContentDeliveryManager
+PSDrive                         : HKCU
+PSProvider                      : Microsoft.PowerShell.Core\Registry
+
+
+LockedStartLayout : 1
+PSPath            : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer
+PSParentPath      : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows
+PSChildName       : Explorer
+PSDrive           : HKCU
+PSProvider        : Microsoft.PowerShell.Core\Registry
+
+
+StartLayoutFile : C:\Users\Admin\AppData\Local\Temp\StartMenuLayout.xml
+PSPath          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer
+PSParentPath    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows
+PSChildName     : Explorer
+PSDrive         : HKCU
+PSProvider      : Microsoft.PowerShell.Core\Registry
+
+VERBOSE:
+VERBOSE:
+VERBOSE:
+VERBOSE: Displaying the dialog box...
+
+ReturnValue    : 0
+PSComputerName :
+
+PS>TerminatingError(Write-Verbose): "Cannot bind argument to parameter 'Message' because it is null."
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:7992 char:29
++ ...                  Write-Verbose -Message $Localization.Skipped -Verbos ...
++                                             ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerboseCommand
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:7992 char:29
++ ...                  Write-Verbose -Message $Localization.Skipped -Verbos ...
++                                             ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerbos
+   eCommand
+
+PS>TerminatingError(Get-ItemPropertyValue): "Property WddmVersion_Min does not exist at path HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\FeatureSetUsage."
+Get-ItemPropertyValue : Property WddmVersion_Min does not exist at path 
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\FeatureSetUsage.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8061 char:25
++ ... rsion_Min = Get-ItemPropertyValue -Path HKLM:\SYSTEM\CurrentControlSe ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ItemPropertyValue], PSArgumentException
+    + FullyQualifiedErrorId : Argument,Microsoft.PowerShell.Commands.GetItemPropertyValueCommand
+Get-ItemPropertyValue : Property WddmVersion_Min does not exist at path
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\FeatureSetUsage.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8061 char:25
++ ... rsion_Min = Get-ItemPropertyValue -Path HKLM:\SYSTEM\CurrentControlSe ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ItemPropertyValue], PSArgumentException
+    + FullyQualifiedErrorId : Argument,Microsoft.PowerShell.Commands.GetItemPropertyValueCommand
+
+
+StateFlags1337 : 2
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches\Delivery Optimization Files
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches
+PSChildName    : Delivery Optimization Files
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+StateFlags1337 : 2
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches\Device Driver Packages
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches
+PSChildName    : Device Driver Packages
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+StateFlags1337 : 2
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches\Previous Installations
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches
+PSChildName    : Previous Installations
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+StateFlags1337 : 2
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches\Setup Log Files
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches
+PSChildName    : Setup Log Files
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+StateFlags1337 : 2
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches\Temporary Setup Files
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches
+PSChildName    : Temporary Setup Files
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+StateFlags1337 : 2
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches\Windows Defender
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches
+PSChildName    : Windows Defender
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+
+StateFlags1337 : 2
+PSPath         : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches\Windows Upgrade Log Files
+PSParentPath   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
+                 rer\VolumeCaches
+PSChildName    : Windows Upgrade Log Files
+PSDrive        : HKLM
+PSProvider     : Microsoft.PowerShell.Core\Registry
+
+Register-ScheduledTask : The parameter is incorrect.
+
+(20,8):UserId:
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8253 char:4
++             Register-ScheduledTask @Parameters -Force
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (PS_ScheduledTask:Root/Microsoft/...S_ScheduledTask) 
+[Register-ScheduledTask], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80070057,Register-ScheduledTask
+Register-ScheduledTask : The parameter is incorrect.
+
+(20,8):UserId:
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8253 char:4
++             Register-ScheduledTask @Parameters -Force
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (PS_ScheduledTask:Root/Microsoft/...S_ScheduledTask) [Register-Schedule
+   dTask], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80070057,Register-ScheduledTask
+
+PS>TerminatingError(Register-ScheduledTask): "Cannot validate argument on parameter 'Description'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+Register-ScheduledTask : Cannot validate argument on parameter 'Description'. The argument is null or empty. Provide an 
+argument that is not null or empty, and then try the command again.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8326 char:27
++             Register-ScheduledTask @Parameters -Force
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Register-ScheduledTask], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Register-ScheduledTask
+Register-ScheduledTask : Cannot validate argument on parameter 'Description'. The argument is null or empty. Provide
+an argument that is not null or empty, and then try the command again.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8326 char:27
++             Register-ScheduledTask @Parameters -Force
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Register-ScheduledTask], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Register-ScheduledTask
+
+PS>TerminatingError(Register-ScheduledTask): "Cannot validate argument on parameter 'Description'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+Register-ScheduledTask : Cannot validate argument on parameter 'Description'. The argument is null or empty. Provide an 
+argument that is not null or empty, and then try the command again.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8396 char:27
++             Register-ScheduledTask @Parameters -Force
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Register-ScheduledTask], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Register-ScheduledTask
+Register-ScheduledTask : Cannot validate argument on parameter 'Description'. The argument is null or empty. Provide
+an argument that is not null or empty, and then try the command again.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8396 char:27
++             Register-ScheduledTask @Parameters -Force
++                                    ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Register-ScheduledTask], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Register-ScheduledTask
+
+PS>TerminatingError(Write-Verbose): "Cannot bind argument to parameter 'Message' because it is null."
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8444 char:28
++                 Write-Verbose -Message $Localization.Skipped -Verbose
++                                        ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerboseCommand
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8444 char:28
++                 Write-Verbose -Message $Localization.Skipped -Verbose
++                                        ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerbos
+   eCommand
+
+PS>TerminatingError(Write-Verbose): "Cannot bind argument to parameter 'Message' because it is null."
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8500 char:28
++                 Write-Verbose -Message $Localization.Skipped -Verbose
++                                        ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerboseCommand
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8500 char:28
++                 Write-Verbose -Message $Localization.Skipped -Verbose
++                                        ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerbos
+   eCommand
+
+PS>TerminatingError(Write-Verbose): "Cannot bind argument to parameter 'Message' because it is null."
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8555 char:28
++                 Write-Verbose -Message $Localization.Skipped -Verbose
++                                        ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerboseCommand
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8555 char:28
++                 Write-Verbose -Message $Localization.Skipped -Verbose
++                                        ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerbos
+   eCommand
+
+PS>TerminatingError(Write-Verbose): "Cannot bind argument to parameter 'Message' because it is null."
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8612 char:28
++                 Write-Verbose -Message $Localization.Skipped -Verbose
++                                        ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerboseCommand
+Write-Verbose : Cannot bind argument to parameter 'Message' because it is null.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:8612 char:28
++                 Write-Verbose -Message $Localization.Skipped -Verbose
++                                        ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Verbose], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteVerbos
+   eCommand
+
+
+SUCCESS: Specified value was saved.
+
+AccountProtection_MicrosoftAccount_Disconnected : 1
+PSPath                                          : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Micros
+                                                  oft\Windows Security Health\State
+PSParentPath                                    : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Micros
+                                                  oft\Windows Security Health
+PSChildName                                     : State
+PSDrive                                         : HKCU
+PSProvider                                      : Microsoft.PowerShell.Core\Registry
+
+
+AppAndBrowser_EdgeSmartScreenOff : 0
+PSPath                           : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows
+                                   Security Health\State
+PSParentPath                     : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows
+                                   Security Health
+PSChildName                      : State
+PSDrive                          : HKCU
+PSProvider                       : Microsoft.PowerShell.Core\Registry
+
+The command was successfully executed.
+The command was successfully executed.
+
+ProcessCreationIncludeCmdLine_Enabled : 1
+PSPath                                : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo
+                                        ws\CurrentVersion\Policies\System\Audit
+PSParentPath                          : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo
+                                        ws\CurrentVersion\Policies\System
+PSChildName                           : Audit
+PSDrive                               : HKLM
+PSProvider                            : Microsoft.PowerShell.Core\Registry
+
+The command was successfully executed.
+
+ProcessCreationIncludeCmdLine_Enabled : 1
+PSPath                                : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo
+                                        ws\CurrentVersion\Policies\System\Audit
+PSParentPath                          : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo
+                                        ws\CurrentVersion\Policies\System
+PSChildName                           : Audit
+PSDrive                               : HKLM
+PSProvider                            : Microsoft.PowerShell.Core\Registry
+
+
+EnableModuleLogging : 1
+PSPath              : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\PowerS
+                      hell\ModuleLogging
+PSParentPath        : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\PowerS
+                      hell
+PSChildName         : ModuleLogging
+PSDrive             : HKLM
+PSProvider          : Microsoft.PowerShell.Core\Registry
+
+
+*            : *
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Mo
+               duleLogging\ModuleNames
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Mo
+               duleLogging
+PSChildName  : ModuleNames
+PSDrive      : HKLM
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+EnableScriptBlockLogging : 1
+PSPath                   : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\P
+                           owerShell\ScriptBlockLogging
+PSParentPath             : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\P
+                           owerShell
+PSChildName              : ScriptBlockLogging
+PSDrive                  : HKLM
+PSProvider               : Microsoft.PowerShell.Core\Registry
+
+
+SmartScreenEnabled : Off
+PSPath             : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\E
+                     xplorer
+PSParentPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+PSChildName        : Explorer
+PSDrive            : HKLM
+PSProvider         : Microsoft.PowerShell.Core\Registry
+
+
+SaveZoneInformation : 1
+PSPath              : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\P
+                      olicies\Attachments
+PSParentPath        : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\P
+                      olicies
+PSChildName         : Attachments
+PSDrive             : HKCU
+PSProvider          : Microsoft.PowerShell.Core\Registry
+
+
+(Default)    : msiexec.exe /a "%1" /qb TARGETDIR="%1 extracted"
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Msi.Package\shell\Extract\Command
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Msi.Package\shell\Extract
+PSChildName  : Command
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+MUIVerb      : @shell32.dll,-37514
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Msi.Package\shell\Extract
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Msi.Package\shell
+PSChildName  : Extract
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+Icon         : shell32.dll,-16817
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Msi.Package\shell\Extract
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Msi.Package\shell
+PSChildName  : Extract
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+(Default)    : cmd /c DISM.exe /Online /Add-Package /PackagePath:"%1" /NoRestart & pause
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs\Command
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs
+PSChildName  : Command
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+MUIVerb      : @shell32.dll,-10210
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\CABFolder\Shell
+PSChildName  : RunAs
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+HasLUAShield :
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\CABFolder\Shell
+PSChildName  : RunAs
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+{7AD84985-87B4-4a16-BE58-8B72A5B390F7} : Play to menu
+PSPath                                 : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wind
+                                         ows\CurrentVersion\Shell Extensions\Blocked
+PSParentPath                           : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wind
+                                         ows\CurrentVersion\Shell Extensions
+PSChildName                            : Blocked
+PSDrive                                : HKLM
+PSProvider                             : Microsoft.PowerShell.Core\Registry
+
+
+{E2BF9676-5F8F-435C-97EB-11607A5BEDF7} :
+PSPath                                 : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wind
+                                         ows\CurrentVersion\Shell Extensions\Blocked
+PSParentPath                           : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wind
+                                         ows\CurrentVersion\Shell Extensions
+PSChildName                            : Blocked
+PSDrive                                : HKLM
+PSProvider                             : Microsoft.PowerShell.Core\Registry
+
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp\Shell\3D Edit' because it does not 
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...p\Shell\3D Edit:String) [New-ItemProperty], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp\Shell\3D Edit' because it does not
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...p\Shell\3D Edit:String) [New-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\Shell\3D Edit' because it does not 
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...f\Shell\3D Edit:String) [New-ItemProperty], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\Shell\3D Edit' because it does not
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...f\Shell\3D Edit:String) [New-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpe\Shell\3D Edit' because it does not 
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...e\Shell\3D Edit:String) [New-ItemProperty], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpe\Shell\3D Edit' because it does not
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...e\Shell\3D Edit:String) [New-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg\Shell\3D Edit' because it does not 
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...g\Shell\3D Edit:String) [New-ItemProperty], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg\Shell\3D Edit' because it does not
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...g\Shell\3D Edit:String) [New-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\Shell\3D Edit' because it does not 
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...g\Shell\3D Edit:String) [New-ItemProperty], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\Shell\3D Edit' because it does not
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...g\Shell\3D Edit:String) [New-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.png\Shell\3D Edit' because it does not 
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...g\Shell\3D Edit:String) [New-ItemProperty], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.png\Shell\3D Edit' because it does not
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...g\Shell\3D Edit:String) [New-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.tif\Shell\3D Edit' because it does not 
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...f\Shell\3D Edit:String) [New-ItemProperty], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.tif\Shell\3D Edit' because it does not
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...f\Shell\3D Edit:String) [New-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff\Shell\3D Edit' because it does not 
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...f\Shell\3D Edit:String) [New-ItemProperty], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+New-ItemProperty : Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff\Shell\3D Edit' because it does not
+exist.
+At H:\Windows\win10script\Sophia\W10Debloat\Sophia.psm1:9704 char:5
++ ...             New-ItemProperty -Path "Registry::HKEY_CLASSES_ROOT\Syste ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKEY_CLASSES_RO...f\Shell\3D Edit:String) [New-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.NewItemPropertyCommand
+
+
+ProgrammaticAccessOnly :
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\batfile\shell\print
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\batfile\shell
+PSChildName            : print
+PSProvider             : Microsoft.PowerShell.Core\Registry
+
+
+ProgrammaticAccessOnly :
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\cmdfile\shell\print
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\cmdfile\shell
+PSChildName            : print
+PSProvider             : Microsoft.PowerShell.Core\Registry
+
+
+ProgrammaticAccessOnly :
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell\encrypt-bde
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell
+PSChildName            : encrypt-bde
+PSProvider             : Microsoft.PowerShell.Core\Registry
+
+
+ProgrammaticAccessOnly :
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell\encrypt-bde-elev
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell
+PSChildName            : encrypt-bde-elev
+PSProvider             : Microsoft.PowerShell.Core\Registry
+
+
+ProgrammaticAccessOnly :
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell\manage-bde
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell
+PSChildName            : manage-bde
+PSProvider             : Microsoft.PowerShell.Core\Registry
+
+
+ProgrammaticAccessOnly :
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell\resume-bde
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell
+PSChildName            : resume-bde
+PSProvider             : Microsoft.PowerShell.Core\Registry
+
+
+ProgrammaticAccessOnly :
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell\resume-bde-elev
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell
+PSChildName            : resume-bde-elev
+PSProvider             : Microsoft.PowerShell.Core\Registry
+
+
+ProgrammaticAccessOnly :
+PSPath                 : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell\unlock-bde
+PSParentPath           : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\Drive\shell
+PSChildName            : unlock-bde
+PSProvider             : Microsoft.PowerShell.Core\Registry
+
+
+MultipleInvokePromptMinimum : 300
+PSPath                      : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentV
+                              ersion\Explorer
+PSParentPath                : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentV
+                              ersion
+PSChildName                 : Explorer
+PSDrive                     : HKCU
+PSProvider                  : Microsoft.PowerShell.Core\Registry
+
+
+NoUseStoreOpenWith : 1
+PSPath             : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explore
+                     r
+PSParentPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows
+PSChildName        : Explorer
+PSDrive            : HKLM
+PSProvider         : Microsoft.PowerShell.Core\Registry
+
+
+SearchboxTaskbarMode : 0
+PSPath               : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\
+                       Search
+PSParentPath         : Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion
+PSChildName          : Search
+PSDrive              : HKCU
+PSProvider           : Microsoft.PowerShell.Core\Registry
+
+WARNING: Restart your PC
+Line File        Errors/Warnings                                                                                       
+---- ----        ---------------                                                                                       
+  59 Sophia.psm1 The property 'UnsupportedOSBuild' cannot be found on this object. Verify that the property exists.    
+4107 Sophia.psm1 The term 'Delete-DeliveryOptimizationCache' is not recognized as the name of a cmdlet, function,      
+                 script file, or operable program. Check the spelling of the name, or if a path was included, verify   
+                 that the path is correct and try again.                                                               
+4884 Sophia.psm1 The service cannot be started, either because it is disabled or because it has no enabled devices     
+                 associated with it. (Exception from HRESULT: 0x80070422)                                              
+6330 Sophia.psm1 The term 'Set-WindowsReservedStorageState' is not recognized as the name of a cmdlet, function,       
+                 script file, or operable program. Check the spelling of the name, or if a path was included, verify   
+                 that the path is correct and try again.                                                               
+7992 Sophia.psm1 Cannot bind argument to parameter 'Message' because it is null.                                       
+8061 Sophia.psm1 Property WddmVersion_Min does not exist at path                                                       
+                 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\FeatureSetUsage.                  
+8253 Sophia.psm1 The parameter is incorrect.                                                                           
+                                                                                                                       
+                 (20,8):UserId:                                                                                        
+8326 Sophia.psm1 Cannot validate argument on parameter 'Description'. The argument is null or empty. Provide an        
+                 argument that is not null or empty, and then try the command again.                                   
+8396 Sophia.psm1 Cannot validate argument on parameter 'Description'. The argument is null or empty. Provide an        
+                 argument that is not null or empty, and then try the command again.                                   
+8444 Sophia.psm1 Cannot bind argument to parameter 'Message' because it is null.                                       
+8500 Sophia.psm1 Cannot bind argument to parameter 'Message' because it is null.                                       
+8555 Sophia.psm1 Cannot bind argument to parameter 'Message' because it is null.                                       
+8612 Sophia.psm1 Cannot bind argument to parameter 'Message' because it is null.                                       
+9276 Sophia.psm1 Property Enabled does not exist at path HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows Script           
+                 Host\Settings.                                                                                        
+9704 Sophia.psm1 Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.png\Shell\3D Edit' because it does not    
+                 exist.                                                                                                
+9704 Sophia.psm1 Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\Shell\3D Edit' because it does not    
+                 exist.                                                                                                
+9704 Sophia.psm1 Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff\Shell\3D Edit' because it does not   
+                 exist.                                                                                                
+9704 Sophia.psm1 Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.tif\Shell\3D Edit' because it does not    
+                 exist.                                                                                                
+9704 Sophia.psm1 Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\Shell\3D Edit' because it does not    
+                 exist.                                                                                                
+9704 Sophia.psm1 Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp\Shell\3D Edit' because it does not    
+                 exist.                                                                                                
+9704 Sophia.psm1 Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg\Shell\3D Edit' because it does not   
+                 exist.                                                                                                
+9704 Sophia.psm1 Cannot find path 'HKEY_CLASSES_ROOT\SystemFileAssociations\.jpe\Shell\3D Edit' because it does not    
+                 exist.
+
+

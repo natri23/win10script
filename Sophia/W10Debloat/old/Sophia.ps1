@@ -1,13 +1,15 @@
 Clear-Host
+$Host.UI.RawUI.WindowTitle = 'Windows 10 Sophia Script v5.3.1 | Copyright farag & oz—zo, 2015 to 2020 | Happy New Year!'
 Remove-Module -Name Sophia -Force -ErrorAction Ignore
 Import-Module -Name $PSScriptRoot\Sophia.psd1 -PassThru -Force
 Import-LocalizedData -BindingVariable Global:Localization -FileName Sophia
-Check
-#CreateRestorePoint
+Checkings
+Logging
+CreateRestorePoint
 
 # Privacy & Telemetry
 
-TelemetryService -Disable
+DiagTrackService -Disable
 DiagnosticDataLevel -Minimal
 ErrorReporting -Disable
 WindowsFeedback -Disable
@@ -65,7 +67,6 @@ StorageSenseFrequency -Month
 StorageSenseTempFiles -Enable
 StorageSenseRecycleBin -Enable
 Hibernate -Disable
-TempPath -SystemDrive
 Win32LongPathLimit -Disable
 BSoDStopError -Enable
 AdminApprovalMode -Disable
@@ -74,14 +75,13 @@ DeliveryOptimization -Disable
 WaitNetworkStartup -Enable
 WindowsManageDefaultPrinter -Disable
 WindowsFeatures -Disable
-DisableWindowsCapabilities
+WindowsCapabilities -Disable
 UpdateMicrosoftProducts -Enable
 BackgroundUWPApps -Disable
 PowerManagementScheme -High
 LatestInstalled.NET -Enable
 PCTurnOffDevice -Disable
 SetInputMethod -English
-ChangeUserShellFolderLocation -Root
 WinPrtScrFolder -Desktop
 RecommendedTroubleshooting -Automatic
 FoldersLaunchSeparateProcess -Enable
@@ -122,9 +122,9 @@ GPUScheduling -Enable
 
 # Scheduled
 
-CreateCleanUpTask
-CreateSoftwareDistributionTask
-CreateTempTask
+CleanUpTask -Register
+SoftwareDistributionTask -Register
+TempTask -Register
 
 # Defender & Security
 
@@ -144,6 +144,7 @@ PowerShellModulesLogging -Enable
 PowerShellScriptsLogging -Enable
 AppsSmartScreen -Disable
 SaveZoneInformation -Disable
+WindowsScriptHost -Enable
 
 # Context
 

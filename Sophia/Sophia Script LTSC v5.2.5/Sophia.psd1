@@ -1,7 +1,7 @@
 ﻿@{
 	RootModule            = 'Sophia.psm1'
-	ModuleVersion         = '5.10.5'
-	GUID                  = '109cc881-c42b-45af-a74a-550781989d6a'
+	ModuleVersion         = '5.2.5'
+	GUID                  = 'a36a65ca-70f9-43df-856c-3048fc5e7f01'
 	Author                = 'Dmitry "farag" Nefedov'
 	Copyright             = '(c) 2014–2021 farag & oZ-Zo. All rights reserved.'
 	Description           = 'Module for Windows 10 fine-tuning and automating the routine tasks'

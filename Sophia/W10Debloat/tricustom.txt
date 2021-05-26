@@ -1,5 +1,6 @@
 <#privacy&telemetry#>
-TelemetryService -Disable,
+
+DiagTrackService -Disable,
 DiagnosticDataLevel -Minimal,
 ErrorReporting -Disable,
 WindowsFeedback -Disable,
@@ -15,7 +16,9 @@ AppsSilentInstalling -Disable,
 WhatsNewInWindows -Disable,
 TailoredExperiences -Disable,
 BingSearch -Disable
+
 <#ui&personal#>
+
 ThisPC -Show,
 CheckBoxes -Disable,
 HiddenItems -Enable,
@@ -43,15 +46,18 @@ TaskManagerWindow -Expanded,
 RestartNotification -Show,
 ShortcutsSuffix -Disable,
 PrtScnSnippingTool -Enable
+
 <#onedrive#>
+
 UninstallOneDrive
+
 <#system#>
+
 StorageSense -Enable,
 StorageSenseFrequency -Month,
 StorageSenseTempFiles -Enable,
 StorageSenseRecycleBin -Enable,
 Hibernate -Disable,
-TempPath -SystemDrive,
 Win32LongPathLimit -Disable,
 BSoDStopError -Enable,
 AdminApprovalMode -Disable,
@@ -60,14 +66,13 @@ DeliveryOptimization -Disable,
 WaitNetworkStartup -Enable,
 WindowsManageDefaultPrinter -Disable,
 WindowsFeatures -Disable,
-DisableWindowsCapabilities,
+WindowsCapabilities -Disable,
 UpdateMicrosoftProducts -Enable,
 BackgroundUWPApps -Disable,
 PowerManagementScheme -High,
 LatestInstalled.NET -Enable,
 PCTurnOffDevice -Disable,
 SetInputMethod -English,
-ChangeUserShellFolderLocation -Root,
 WinPrtScrFolder -Desktop,
 RecommendedTroubleshooting -Automatic,
 FoldersLaunchSeparateProcess -Enable,
@@ -81,7 +86,9 @@ SaveRestartableApps -Enable,
 NetworkDiscovery -Enable,
 SmartActiveHours -Enable,
 DeviceRestartAfterUpdate -Enable
+
 <#start#>
+
 AppSuggestions -Hide,
 RunCMDShortcut -Elevated,
 UnpinAllStartTiles,
@@ -89,21 +96,29 @@ syspin,
 PinControlPanel,
 PinDevicesPrinters,
 PinCommandPrompt
+
 <#uwp#>
+
 UninstallUWPApps,
 InstallHEVC,
 CortanaAutostart -Disable,
 CheckUWPAppsUpdates
+
 <#gaming#>
+
 XboxGameBar -Disable,
 XboxGameTips -Disable,
 SetAppGraphicsPerformance,
 GPUScheduling -Enable
+
 <#scheduled#>
-CreateCleanUpTask,
-CreateSoftwareDistributionTask,
-CreateTempTask
+
+CleanUpTask -Register,
+SoftwareDistributionTask -Register,
+TempTask -Register
+
 <#defender&security#>
+
 AddProtectedFolders,
 AddAppControlledFolder,
 AddDefenderExclusionFolder,
@@ -119,8 +134,11 @@ EventViewerCustomView -Enable,
 PowerShellModulesLogging -Enable,
 PowerShellScriptsLogging -Enable,
 AppsSmartScreen -Disable,
-SaveZoneInformation -Disable
+SaveZoneInformation -Disable,
+WindowsScriptHost -Enable
+
 <#context#>
+
 MSIExtractContext -Add,
 CABInstallContext -Add,
 RunAsDifferentUserContext -Add,
@@ -135,6 +153,9 @@ BitmapImageNewContext -Remove,
 RichTextDocumentNewContext -Remove,
 MultipleInvokeContext -Enable,
 UseStoreOpenWith -Hide
+
 <#other#>
+
 TaskbarSearch -Hide
+
 <#end#>

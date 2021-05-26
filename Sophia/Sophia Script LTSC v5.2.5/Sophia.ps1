@@ -1,9 +1,9 @@
 ﻿<#
 	.SYNOPSIS
-	Default preset file for "Windows 10 Sophia Script"
+	Default preset file for "Windows 10 Sophia Script" (LTSC version)
 
-	Version: v5.10.5
-	Date: 14.05.2021
+	Version: v5.2.5
+	Date: 17.05.2021
 
 	Copyright (c) 2014–2021 farag
 	Copyright (c) 2019–2021 farag & oZ-Zo
@@ -22,10 +22,10 @@
 	.\Sophia.ps1 -Functions "DiagTrackService -Disable", "DiagnosticDataLevel -Minimal", UninstallUWPApps
 
 	.NOTES
-	Supported Windows 10 versions
-	Versions: 2004/20H2/21H1
-	Builds: 19041/19042/19043
-	Editions: Home/Pro/Enterprise
+	Supported Windows 10 version
+	Version: 1809
+	Build: 17763
+	Edition: Enterprise LTSC
 	Architecture: x64
 
 	.NOTES
@@ -71,7 +71,7 @@ param
 
 Clear-Host
 
-$Host.UI.RawUI.WindowTitle = "Windows 10 Sophia Script v5.10.5 | Made with $([char]::ConvertFromUtf32(0x1F497)) of Windows 10 | $([char]0x00A9) farag & oz-zo, 2014–2021"
+$Host.UI.RawUI.WindowTitle = "Windows 10 Sophia Script for LTSC v5.2.5 | Made with $([char]::ConvertFromUtf32(0x1F497)) of Windows 10 | $([char]0x00A9) farag & oz-zo, 2014–2021"
 
 Remove-Module -Name Sophia -Force -ErrorAction Ignore
 Import-Module -Name $PSScriptRoot\Sophia.psd1 -PassThru -Force
@@ -126,7 +126,7 @@ Checkings -Warning
 
 # Create a restore point
 # Создать точку восстановления
-CreateRestorePoint
+#CreateRestorePoint
 #endregion Protection
 
 #region Privacy & Telemetry
@@ -201,62 +201,6 @@ ShareAcrossDevices -Disable
 # Let apps on other devices open and message apps on this device, and vice versa (default value)
 # Разрешать приложениям на других устройствах запускать приложения и отправлять сообщения на этом устройстве и наоборот (значение по умолчанию)
 # ShareAcrossDevices -Enable
-
-# Hide the Windows welcome experiences after updates and occasionally when I sign in to highlight what's new and suggested
-# Скрывать экран приветствия Windows после обновлений и иногда при входе, чтобы сообщить о новых функциях и предложениях
-WindowsWelcomeExperience -Hide
-
-# Show the Windows welcome experiences after updates and occasionally when I sign in to highlight what's new and suggested (default value)
-# Показывать экран приветствия Windows после обновлений и иногда при входе, чтобы сообщить о новых функциях и предложениях (значение по умолчанию)
-# WindowsWelcomeExperience -Show
-
-# Get tip, trick, and suggestions as you use Windows (default value)
-# Получать советы, подсказки и рекомендации при использованию Windows (значение по умолчанию)
-WindowsTips -Enable
-
-# Do not get tip, trick, and suggestions as you use Windows
-# Не получать советы, подсказки и рекомендации при использованию Windows
-# WindowsTips -Disable
-
-# Hide the suggested content in the Settings app
-# Скрывать рекомендуемое содержимое в приложении "Параметры"
-SettingsSuggestedContent -Hide
-
-# Show the suggested content in the Settings app (default value)
-# Показывать рекомендуемое содержимое в приложении "Параметры" (значение по умолчанию)
-# SettingsSuggestedContent -Show
-
-# Turn off the automatic installing suggested apps
-# Отключить автоматическую установку рекомендованных приложений
-AppsSilentInstalling -Disable
-
-# Turn on automatic installing suggested apps (default value)
-# Включить автоматическую установку рекомендованных приложений (значение по умолчанию)
-# AppsSilentInstalling -Enable
-
-# Do not suggest ways I can finish setting up my device to get the most out of Windows
-# Не предлагать способы завершения настройки устройства для максимально эффективного использования Windows
-WhatsNewInWindows -Disable
-
-# Suggest ways I can finish setting up my device to get the most out of Windows (default value)
-# Предлагать способы завершения настройки устройства для максимально эффективного использования Windows (значение по умолчанию)
-# WhatsNewInWindows -Enable
-
-# Do not offer tailored experiences based on the diagnostic data setting
-# Не предлагать персонализированные возможности, основанные на выбранном параметре диагностических данных
-TailoredExperiences -Disable
-
-# Offer tailored experiences based on the diagnostic data setting (default value)
-# Предлагать персонализированные возможности, основанные на выбранном параметре диагностических данных (значение по умолчанию)
-# TailoredExperiences -Enable
-
-# Disable Bing search in the Start Menu (for the USA only)
-# Отключить в меню "Пуск" поиск через Bing (только для США)
-BingSearch -Disable
-
-# Enable Bing search in the Start Menu (default value)
-# Включить поиск через Bing в меню "Пуск" (значение по умолчанию)
-# BingSearch -Enable
 #endregion Privacy & Telemetry
 
 #region UI & Personalization
@@ -307,22 +251,6 @@ OpenFileExplorerTo -ThisPC
 # Open File Explorer to: Quick access (default value)
 # Открывать проводник для: "Быстрый доступ" (значение по умолчанию)
 # OpenFileExplorerTo -QuickAccess
-
-# Hide Cortana button on the taskbar
-# Скрывать кнопку Кортаны на панели задач
-CortanaButton -Hide
-
-# Show Cortana button on the taskbar (default value)
-# Показать кнопку Кортаны на панели задач (значение по умолчанию)
-# CortanaButton -Show
-
-# Do not show sync provider notification within File Explorer
-# Не показывать уведомления поставщика синхронизации в проводнике
-OneDriveFileExplorerAd -Hide
-
-# Show sync provider notification within File Explorer (default value)
-# Показывать уведомления поставщика синхронизации в проводнике (значение по умолчанию)
-# OneDriveFileExplorerAd -Show
 
 # Hide Task View button on the taskbar
 # Скрывать кнопку Просмотра задач
@@ -416,33 +344,13 @@ TaskbarSearch -Hide
 # Показать поле поиска на панели задач (значение по умолчанию)
 # TaskbarSearch -SearchBox
 
-# Do not show the Windows Ink Workspace button on the taskbar
-# Не показывать кнопку Windows Ink Workspace на панели задач
-WindowsInkWorkspace -Hide
-
-# Show Windows Ink Workspace button on the taskbar (default value)
-# Показать кнопку Windows Ink Workspace на панели задач (значение по умолчанию)
-# WindowsInkWorkspace -Show
-
 # Always show all icons in the notification area
 # Всегда отображать все значки в области уведомлений
-TrayIcons -Show
+#TrayIcons -Show
 
 # Do not show all icons in the notification area (default value)
 # Не отображать все значки в области уведомлений (значение по умолчанию)
 # TrayIcons -Hide
-
-# Hide the Meet Now icon in the notification area
-# Скрыть иконку "Провести собрание" в трее
-MeetNow -Hide
-
-# Show the Meet Now icon in the notification area
-# Отобразить иконку "Провести собрание" в трее
-# MeetNow -Show
-
-# Unpin Microsoft Edge and Microsoft Store from the taskbar
-# Открепить Microsoft Edge и Microsoft Store от панели задач
-UnpinTaskbarEdgeStore
 
 # View the Control Panel icons by: large icons
 # Просмотр иконок Панели управления как: крупные значки
@@ -464,17 +372,9 @@ WindowsColorScheme -Dark
 # Установить режим цвета для Windows на светлый
 # WindowsColorScheme -Light
 
-# Set the app mode color scheme to the dark
-# Установить цвет режима приложений на темный
-AppMode -Dark
-
-# Set the app mode color scheme to the light
-# Установить цвет режима приложений на светлый
-# AppMode -Light
-
 # Do not show the "New App Installed" indicator
 # Не показывать уведомление "Установлено новое приложение"
-NewAppInstalledNotification -Hide
+#NewAppInstalledNotification -Hide
 
 # Show the "New App Installed" indicator (default value)
 # Показывать уведомление "Установлено новое приложение" (значение по умолчанию)
@@ -537,16 +437,6 @@ AppsLanguageSwitch -Enable
 # AppsLanguageSwitch -Disable
 #endregion UI & Personalization
 
-#region OneDrive
-# Uninstall OneDrive
-# Удалить OneDrive
-OneDrive -Uninstall
-
-# Install OneDrive (default value)
-# Установить OneDrive (значение по умолчанию)
-# OneDrive -Install
-#endregion OneDrive
-
 #region System
 #region StorageSense
 # Turn on Storage Sense
@@ -584,7 +474,7 @@ StorageSenseRecycleBin -Enable
 
 # Disable hibernation
 # Отключить режим гибернации
-Hibernate -Disable
+#Hibernate -Disable
 
 # Enable hibernate (default value)
 # Включить режим гибернации (значение по умолчанию)
@@ -648,7 +538,7 @@ WaitNetworkStartup -Enable
 
 # Do not let Windows decide which printer should be the default one
 # Не разрешать Windows решать, какой принтер должен использоваться по умолчанию
-WindowsManageDefaultPrinter -Disable
+#WindowsManageDefaultPrinter -Disable
 
 # Let Windows decide which printer should be the default one (default value)
 # Разрешать Windows решать, какой принтер должен использоваться по умолчанию (значение по умолчанию)
@@ -761,24 +651,6 @@ WinPrtScrFolder -Desktop
 # Cохранять скриншоты по нажатию Win+PrtScr в папку "Изображения" (значение по умолчанию)
 # WinPrtScrFolder -Default
 
-<#
-	Run troubleshooters automatically, then notify
-	In order this feature to work the OS level of diagnostic data gathering will be set to "Optional diagnostic data", and the error reporting feature will be turned on
-
-	Автоматически запускать средства устранения неполадок, а затем уведомлять
-	Чтобы заработала данная функция, уровень сбора диагностических сведений ОС будет установлен на "Необязательные диагностические данные" и включится создание отчетов об ошибках Windows
-#>
-RecommendedTroubleshooting -Automatic
-
-<#
-	Ask me before running troubleshooters (default value)
-	In order this feature to work the OS level of diagnostic data gathering will be set to "Optional diagnostic data"
-
-	Спрашивать перед запуском средств устранения неполадок (значение по умолчанию)
-	Чтобы заработала данная функция, уровень сбора диагностических сведений ОС будет установлен на "Необязательные диагностические данные" и включится создание отчетов об ошибках Windows
-#>
-# RecommendedTroubleshooting -Default
-
 # Launch folder windows in a separate process
 # Запускать окна с папками в отдельном процессе
 FoldersLaunchSeparateProcess -Enable
@@ -786,14 +658,6 @@ FoldersLaunchSeparateProcess -Enable
 # Do not launch folder windows in a separate process (default value)
 # Не запускать окна с папками в отдельном процессе (значение по умолчанию)
 # FoldersLaunchSeparateProcess -Disable
-
-# Disable and delete reserved storage after the next update installation
-# Отключить и удалить зарезервированное хранилище после следующей установки обновлений
-ReservedStorage -Disable
-
-# Enable reserved storage (default value)
-# Включить зарезервированное хранилище (значение по умолчанию)
-# ReservedStorage -Enable
 
 # Disable help look up via F1
 # Отключить открытие справки по нажатию F1
@@ -843,14 +707,6 @@ ThumbnailCacheRemoval -Disable
 # Включить удаление кэша миниатюр (значение по умолчанию)
 # ThumbnailCacheRemoval -Enable
 
-# Enable automatically saving my restartable apps when signing out and restart them after signing in
-# Включить автоматическое сохранение моих перезапускаемых приложений при выходе из системы и перезапускать их после выхода
-SaveRestartableApps -Enable
-
-# Disable automatically saving my restartable apps when signing out and restart them after signing in (default value)
-# Выключить автоматическое сохранение моих перезапускаемых приложений при выходе из системы и перезапускать их после выхода (значение по умолчанию)
-# SaveRestartableApps -Disable
-
 # Enable "Network Discovery" and "File and Printers Sharing" for workgroup networks
 # Включить сетевое обнаружение и общий доступ к файлам и принтерам для рабочих групп
 NetworkDiscovery -Enable
@@ -866,15 +722,6 @@ SmartActiveHours -Enable
 # Do not automatically adjust active hours for me based on daily usage (default value)
 # Не изменять автоматически период активности для этого устройства на основе действий (значение по умолчанию)
 # SmartActiveHours -Disable
-
-# Restart this device as soon as possible when a restart is required to install an update
-# Перезапускать это устройство как можно быстрее, если для установки обновления требуется перезагрузка
-DeviceRestartAfterUpdate -Enable
-
-# Do not restart this device as soon as possible when a restart is required to install an update (default value)
-# Не перезапускать это устройство как можно быстрее, если для установки обновления требуется перезагрузка (значение по умолчанию)
-# DeviceRestartAfterUpdate -Disable
-
 <#
 	Register app, calculate hash, and set as default for specific extension without the "How do you want to open this?" pop-up
 	Зарегистрировать приложение, вычислить хэш и установить как приложение по умолчанию для конкретного расширения без всплывающего окна "Каким образом вы хотите открыть этот файл?"
@@ -887,31 +734,10 @@ DeviceRestartAfterUpdate -Enable
 # Set-Association -ProgramPath "%ProgramFiles%\Notepad++\notepad++.exe" -Extension .txt -Icon "%ProgramFiles%\Notepad++\notepad++.exe,0"
 #endregion System
 
-#region WSL
-# Install the Windows Subsystem for Linux (WSL)
-# Установить подсистему Windows для Linux (WSL)
-# WSL -Enable
-
-# Uninstall the Windows Subsystem for Linux (WSL)
-# Удалить подсистему Windows для Linux (WSL)
-# WSL -Disable
-
-<#
-	Download and install the Linux kernel update package
-	Set WSL 2 as the default version when installing a new Linux distribution
-	Run the function only after WSL installed and PC restart
-
-	Скачать и установить пакет обновления ядра Linux
-	Установить WSL 2 как версию по умолчанию при установке нового дистрибутива Linux
-	Выполните функцию только после установки WSL и перезагрузка ПК
-#>
-# EnableWSL2
-#endregion WSL
-
 #region Start menu
 # Hide recently added apps in the Start menu
 # Скрывать недавно добавленные приложения в меню "Пуск"
-RecentlyAddedApps -Hide
+#RecentlyAddedApps -Hide
 
 # Show recently added apps in the Start menu (default value)
 # Показывать недавно добавленные приложения в меню "Пуск" (значение по умолчанию)
@@ -932,90 +758,7 @@ RunPowerShellShortcut -Elevated
 # Run the Windows PowerShell shortcut from the Start menu as user (default value)
 # Запускать ярлык Windows PowerShell в меню "Пуск" от имени пользователя (значение по умолчанию)
 # RunPowerShellShortcut -NonElevated
-
-<#
-	Pin to Start the following links: Control Panel, Devices and Printers, PowerShell
-	Valid shortcuts values: ControlPanel, DevicesPrinters and PowerShell
-
-	Закрепить на начальном экране следующие ярлыки: Панель управдения, Устройства и принтеры, PowerShell
-	Валидные значения ярлыков: ControlPanel, DevicesPrinters, PowerShell
-#>
-PinToStart -Tiles ControlPanel, DevicesPrinters, PowerShell
-
-<#
-	Unpin all tiles first and pin necessary ones
-	Открепить все ярлыки сначала и закрепить необходимые
-#>
-# PinToStart -UnpinAll -Tiles ControlPanel, DevicesPrinters, PowerShell
-
-# Unpin all the Start tiles
-# Открепить все ярлыки от начального экрана
-# PinToStart -UnpinAll
 #endregion Start menu
-
-#region UWP apps
-<#
-	Uninstall UWP apps using the pop-up dialog box
-	If the "For All Users" is checked apps packages will not be installed for new users
-
-	Удалить UWP-приложения, используя всплывающее диалоговое окно
-	Пакеты приложений не будут установлены для новых пользователей, если отмечена галочка "Для всех пользователей"
-#>
-UninstallUWPApps
-
-<#
-	Uninstall UWP apps using the pop-up dialog box
-	If the "For All Users" is checked apps packages will not be installed for new users
-	The "For All Users" checkbox checked by default
-
-	Удалить UWP-приложения, используя всплывающее диалоговое окно
-	Пакеты приложений не будут установлены для новых пользователей, если отмечена галочка "Для всех пользователей"
-	Галочка "Для всех пользователей" отмечена по умолчанию
-#>
-# UninstallUWPApps -ForAllUsers
-
-<#
-	Restore the default UWP apps using the pop-up dialog box
-	UWP apps can be restored only if they were uninstalled only for the current user
-
-	Восстановить стандартные UWP-приложения, используя всплывающее диалоговое окно
-	UWP-приложения могут быть восстановлены, только если они были удалены для текущего пользователя
-#>
-# RestoreUWPApps
-
-<#
-	Open Microsoft Store "HEVC Video Extensions from Device Manufacturer" page to install this extension manually to be able to open .heic and .heif formats
-	The extension can be installed without Microsoft account
-
-	Открыть страницу "Расширения для видео HEVC от производителя устройства" в Microsoft Store, чтобы вручную установить расширение для открытия форматов .heic и .heif
-	Расширение может быть установлено бесплатно без учетной записи Microsoft
-#>
-# HEIF -Manual
-
-# Download and install "HEVC Video Extensions from Device Manufacturer" to be able to open .heic and .heif formats
-# Скачать и установить "Расширения для видео HEVC от производителя устройства", чтобы иметь возможность открывать форматы .heic и .heif
-HEIF -Install
-
-# Disable Cortana autostarting
-# Выключить автозагрузку Кортана
-CortanaAutostart -Disable
-
-# Enable Cortana autostarting (default value)
-# Включить автозагрузку Кортана (значение по умолчанию)
-# CortanaAutostart -Enable
-
-# Do not let UWP apps run in the background
-# Не разрешать UWP-приложениям работать в фоновом режиме
-BackgroundUWPApps -Disable
-
-# Let all UWP apps run in the background (default value)
-# Разрешить всем UWP-приложениям работать в фоновом режиме (значение по умолчанию)
-# BackgroundUWPApps -Enable
-
-# Check for UWP apps updates
-# Проверить обновления UWP-приложений
-CheckUWPAppsUpdates
-#endregion UWP apps
 
 #region Gaming
 # Disable Xbox Game Bar
@@ -1042,19 +785,6 @@ XboxGameTips -Disable
 	Только при наличии внешней видеокарты
 #>
 SetAppGraphicsPerformance
-
-<#
-	Turn on hardware-accelerated GPU scheduling. Restart needed
-	Only with a dedicated GPU and WDDM verion is 2.7 or higher
-
-	Включить планирование графического процессора с аппаратным ускорением. Необходима перезагрузка
-	Только при наличии внешней видеокарты и WDDM версии 2.7 и выше
-#>
-GPUScheduling -Enable
-
-# Turn off hardware-accelerated GPU scheduling (default value). Restart needed
-# Выключить планирование графического процессора с аппаратным ускорением (значение по умолчанию). Необходима перезагрузка
-# GPUScheduling -Disable
 #endregion Gaming
 
 #region Scheduled tasks
@@ -1158,7 +888,7 @@ PUAppsDetection -Enable
 	Включить песочницу для Microsoft Defender
 	В KVM с QEMU присутствует баг: включение этой функции приводит ВМ к зависанию во время загрузки Windows
 #>
-DefenderSandbox -Enable
+#DefenderSandbox -Enable
 
 # Disable sandboxing for Microsoft Defender (default value)
 # Выключить песочницу для Microsoft Defender (значение по умолчанию)
@@ -1309,30 +1039,6 @@ EditWithPaint3DContext -Hide
 # Показывать пункт "Изменить с помощью Paint 3D" в контекстном меню (значение по умолчанию)
 # EditWithPaint3DContext -Show
 
-# Hide the "Edit with Photos" item from the context menu
-# Скрыть пункт "Изменить с помощью приложения "Фотографии"" из контекстного меню
-EditWithPhotosContext -Hide
-
-# Show the "Edit with Photos" item in the context menu (default value)
-# Показывать пункт "Изменить с помощью приложения "Фотографии"" в контекстном меню (значение по умолчанию)
-# EditWithPhotosContext -Show
-
-# Hide the "Create a new video" item from the context menu
-# Скрыть пункт "Создать новое видео" из контекстного меню
-CreateANewVideoContext -Hide
-
-# Show the "Create a new video" item in the context menu (default value)
-# Показывать пункт "Создать новое видео" в контекстном меню (значение по умолчанию)
-# CreateANewVideoContext -Show
-
-# Hide the "Edit" item from the images context menu
-# Скрыть пункт "Изменить" из контекстного меню изображений
-ImagesEditContext -Hide
-
-# Show the "Edit" item from in images context menu (default value)
-# Показывать пункт "Изменить" в контекстном меню изображений (значение по умолчанию)
-# ImagesEditContext -Show
-
 # Hide the "Print" item from the .bat and .cmd context menu
 # Скрыть пункт "Печать" из контекстного меню .bat и .cmd файлов
 PrintCMDContext -Hide
@@ -1343,7 +1049,7 @@ PrintCMDContext -Hide
 
 # Hide the "Include in Library" item from the context menu
 # Скрыть пункт "Добавить в библиотеку" из контекстного меню
-IncludeInLibraryContext -Hide
+#IncludeInLibraryContext -Hide
 
 # Show the "Include in Library" item in the context menu (default value)
 # Показывать пункт "Добавить в библиотеку" в контекстном меню (значение по умолчанию)
@@ -1351,7 +1057,7 @@ IncludeInLibraryContext -Hide
 
 # Hide the "Send to" item from the folders context menu
 # Скрыть пункт "Отправить" из контекстного меню папок
-SendToContext -Hide
+#SendToContext -Hide
 
 # Show the "Send to" item in the folders context menu (default value)
 # Показывать пункт "Отправить" в контекстном меню папок (значение по умолчанию)
@@ -1383,7 +1089,7 @@ RichTextDocumentNewContext -Remove
 
 # Remove the "Compressed (zipped) Folder" item from the "New" context menu
 # Удалить пункт "Сжатая ZIP-папка" из контекстного меню "Создать"
-CompressedFolderNewContext -Remove
+#CompressedFolderNewContext -Remove
 
 # Add the "Compressed (zipped) Folder" item to the "New" context menu (default value)
 # Восстановить пункт "Сжатая ZIP-папка" в контекстном меню "Создать" (значение по умолчанию)
