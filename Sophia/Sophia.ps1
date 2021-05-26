@@ -2,14 +2,14 @@
 	.SYNOPSIS
 	Default preset file for "Windows 10 Sophia Script"
 
-	Version: v5.3.1
-	Date: 21.12.2020
-	Copyright (c) 2020 farag & oZ-Zo
+	Version: v5.3.3
+	Date: 20.01.2021
+	Copyright (c) 2021 farag & oZ-Zo
 
 	Thanks to all https://forum.ru-board.com members involved
 
 	.DESCRIPTION
-	Supported Windows 10 versions: 2004 (20H1)/2009 (20H2), 19041/19042, Home/Pro/Enterprise, x64
+	Supported Windows 10 versions: 2004 (20H1)/20H2 (2009), 19041/19042, Home/Pro/Enterprise, x64
 
 	Due to the fact that the script includes more than 150 functions with different arguments, you must read the entire Sophia.ps1 carefully and
 	comment out/uncomment those functions that you do/do not want to be executed
@@ -26,7 +26,7 @@
 
 	.NOTES
 	https://forum.ru-board.com/topic.cgi?forum=62&topic=30617#15
-	https://habr.com/en/post/521202/
+	https://habr.com/post/521202/
 	https://forums.mydigitallife.net/threads/powershell-script-setup-windows-10.81675/
 	https://www.reddit.com/r/PowerShell/comments/go2n5v/powershell_script_setup_windows_10/
 
@@ -37,20 +37,46 @@
 #Requires -RunAsAdministrator
 #Requires -Version 5.1
 
+[CmdletBinding()]
+param
+(
+	[Parameter(Mandatory = $false)]
+	[string[]]
+	$Functions
+)
+
 Clear-Host
 
-$Host.UI.RawUI.WindowTitle = "Windows 10 Sophia Script v5.3.1 | ©️ farag & oz-zo, 2015–2020 | $((Invoke-WebRequest -Uri https://wttr.in/?format=3 -UseBasicParsing).Content) | Happy New Year!"
+$Host.UI.RawUI.WindowTitle = "Windows 10 Sophia Script v5.3.3 | ©️ farag & oz-zo, 2015–2021"
 
 Remove-Module -Name Sophia -Force -ErrorAction Ignore
 Import-Module -Name $PSScriptRoot\Sophia.psd1 -PassThru -Force
 
 Import-LocalizedData -BindingVariable Global:Localization -FileName Sophia
 
+
+<#
+	.SYNOPSIS
+	Adds the feature to run the script by specifying module functions as parameters
+	Добавляет возможность запускать скрипт, указывая в качестве параметров функции модуля
+
+	.EXAMPLE
+	.\Sophia.ps1 -Functions "FunctionName1 -Parameter", "FunctionName2 -Parameter"
+#>
+if ($Functions)
+{
+	foreach ($Function in $Functions)
+	{
+		Invoke-Expression -Command $Function
+	}
+	exit
+}
+
 # Checkings
 # Проверки
 Checkings
 
-<	#
+<#
 	Enable script logging. The log will be being recorded into the script folder
 	To stop logging just close the console or type "Stop-Transcript"
 
@@ -61,16 +87,16 @@ Checkings
 
 # Create a restore point
 # Создать точку восстановления
-#CreateRestorePoint
+CreateRestorePoint
 
 #region Privacy & Telemetry
-# Disable the "Connected User Experiences and Telemetry" service
-# Отключить службу "Функциональные возможности для подключенных пользователей и телеметрия"
-TelemetryService -Disable
+# Disable the DiagTrack service, firewall rule for Unified Telemetry Client Outbound Traffic and block connection
+# Отключить службу DiagTrack, правила брандмауэра для исходящего трафик клиента единой телеметрии и заблокировать соединение
+DiagTrackService -Disable
 
-# Enable the "Connected User Experiences and Telemetry" service (default value)
-# Включить службу "Функциональные возможности для подключенных пользователей и телеметрия" (значение по умолчанию)
-# TelemetryService -Enable
+# Enable the DiagTrack service, firewall rule for Unified Telemetry Client Outbound Traffic and allow connection
+# Включить службу DiagTrack, правила брандмауэра для исходящего трафик клиента единой телеметрии и разрешить соединение
+# DiagTrackService -Enable
 
 # Set the OS level of diagnostic data gathering to minimum
 # Установить уровень сбора диагностических сведений ОС на минимальный
@@ -360,7 +386,7 @@ WindowsInkWorkspace -Hide
 
 # Always show all icons in the notification area (current user only)
 # Всегда отображать все значки в области уведомлений (только для текущего пользователя)
-#TrayIcons -Show
+TrayIcons -Show
 
 # Do not show all icons in the notification area (current user only) (default value)
 # Не отображать все значки в области уведомлений (только для текущего пользователя) (значение по умолчанию)
@@ -452,11 +478,11 @@ PrtScnSnippingTool -Enable
 
 # Let me use a different input method for each app window (current user only)
 # Позволить выбирать метод ввода для каждого окна (только для текущего пользователя)
-AppsLanguageSwitch -Disable
+AppsLanguageSwitch -Enable
 
 # Do not let use a different input method for each app window (current user only) (default value)
 # Не позволять выбирать метод ввода для каждого окна (только для текущего пользователя) (значение по умолчанию)
-# AppsLanguageSwitch -Enable
+# AppsLanguageSwitch -Disable
 #endregion UI & Personalization
 
 #region OneDrive
@@ -576,16 +602,26 @@ WindowsManageDefaultPrinter -Disable
 # Разрешать Windows решать, какой принтер должен использоваться по умолчанию (только для текущего пользователя) (значение по умолчанию)
 # WindowsManageDefaultPrinter -Enable
 
-# Disable the Windows features using the pop-up dialog box that enables the user to select features to remove
-# Отключить компоненты Windows, используя всплывающее диалоговое окно, позволяющее пользователю отметить компоненты на удаление
+<#
+	Disable the Windows features using the pop-up dialog box that enables the user to select features to remove
+	Отключить компоненты Windows, используя всплывающее диалоговое окно, позволяющее пользователю отметить компоненты на удаление
+
+	If you want to leave "Multimedia settings" in the advanced settings of Power Options do not uninstall this feature
+	Если вы хотите оставить параметр "Параметры мультимедиа" в дополнительных параметрах электропитания, не удаляйте этот компонент
+#>
 WindowsFeatures -Disable
 
 # Enable the Windows features using the pop-up dialog box that enables the user to select features to remove
 # Включить компоненты Windows, используя всплывающее диалоговое окно, позволяющее пользователю отметить компоненты на удаление
 # WindowsFeatures -Enable
 
-# Disable Features On Demand v2 (FODv2) capabilities using the pop-up dialog box
-# Отключить компоненты "Функции по требованию" (FODv2), используя всплывающее диалоговое окно
+<#
+	Disable Features On Demand v2 (FODv2) capabilities using the pop-up dialog box
+	Отключить компоненты "Функции по требованию" (FODv2), используя всплывающее диалоговое окно
+
+	If you want to leave "Multimedia settings" in the advanced settings of Power Options do not uninstall this feature
+	Если вы хотите оставить параметр "Параметры мультимедиа" в дополнительных параметрах электропитания, не удаляйте этот компонент
+#>
 WindowsCapabilities -Disable
 
 # Enable Feature On Demand v2 (FODv2) capabilities using the pop-up dialog box
@@ -600,8 +636,8 @@ UpdateMicrosoftProducts -Enable
 # Не подключаться к службе Microsoft Update так, чтобы при обновлении Windows не получать обновления для других продуктов Майкрософт (значение по умолчанию)
 # UpdateMicrosoftProducts -Disable
 
-# Do not let all UWP apps run in the background (current user only)
-# Не разрешать всем UWP-приложениям работать в фоновом режиме (только для текущего пользователя)
+# Do not let UWP apps run in the background (current user only)
+# Не разрешать UWP-приложениям работать в фоновом режиме (только для текущего пользователя)
 BackgroundUWPApps -Disable
 
 # Let all UWP apps run in the background (current user only) (default value)
@@ -724,6 +760,14 @@ NumLock -Enable
 # Disable Num Lock at startup (default value)
 # Выключить Num Lock при загрузке (значение по умолчанию)
 # NumLock -Disable
+
+# Enable Caps Lock
+# Включить Caps Lock
+# CapsLock -Enable
+
+# Disable Caps Lock (default value)
+# Выключить Caps Lock (значение по умолчанию)
+# CapsLock -Disable
 
 # Disable StickyKey after tapping the Shift key 5 times (current user only)
 # Выключить залипание клавиши Shift после 5 нажатий (только для текущего пользователя)
@@ -1047,8 +1091,13 @@ PUAppsDetection -Enable
 # Выключить обнаружение потенциально нежелательных приложений и блокировать их (значение по умолчанию)
 # PUAppsDetection -Disable
 
-# Enable sandboxing for Microsoft Defender
-# Включить песочницу для Microsoft Defender
+<#
+	Enable sandboxing for Microsoft Defender
+	There is a bug in KVM with QEMU: enabling this function causes VM to freeze up during the loading phase of Windows
+
+	Включить песочницу для Microsoft Defender
+	В KVM с QEMU присутсвует баг: включение этой функции приводит ВМ к зависанию во время загрузки Windows
+#>
 DefenderSandbox -Enable
 
 # Disable sandboxing for Microsoft Defender (default value)
@@ -1136,7 +1185,7 @@ SaveZoneInformation -Disable
 	Отключить Windows Script Host (только для текущего пользователя)
 	Становится невозможным запустить файлы .js и .vbs
 #>
-#WindowsScriptHost -Disable
+# WindowsScriptHost -Disable
 
 # Emable Windows Script Host (current user only) (default value)
 # Включить Windows Script Host (только для текущего пользователя) (значение по умолчанию)
@@ -1144,7 +1193,7 @@ SaveZoneInformation -Disable
 
 # Enable Windows Sandbox
 # Включить Windows Sandbox
-#WindowsSandbox -Enable
+WindowsSandbox -Enable
 
 # Disable Windows Sandbox (default value)
 # Выключить Windows Sandbox (значение по умолчанию)
@@ -1194,7 +1243,7 @@ ShareContext -Hide
 
 # Hide the "Edit with Paint 3D" item from the context menu
 # Скрыть пункт "Изменить с помощью Paint 3D" из контекстного меню
-EditWithPaint3DContext -Hide ###
+EditWithPaint3DContext -Hide
 
 # Show the "Edit with Paint 3D" item in the context menu (default value)
 # Показывать пункт "Изменить с помощью Paint 3D" в контекстном меню (значение по умолчанию)
@@ -1218,7 +1267,7 @@ CreateANewVideoContext -Hide
 
 # Hide the "Edit" item from the images context menu
 # Скрыть пункт "Изменить" из контекстного меню изображений
-#ImagesEditContext -Hide
+ImagesEditContext -Hide
 
 # Show the "Edit" item from in images context menu (default value)
 # Показывать пункт "Изменить" в контекстном меню изображений (значение по умолчанию)
@@ -1234,7 +1283,7 @@ PrintCMDContext -Hide
 
 # Hide the "Include in Library" item from the context menu
 # Скрыть пункт "Добавить в библиотеку" из контекстного меню
-#IncludeInLibraryContext -Hide
+IncludeInLibraryContext -Hide
 
 # Show the "Include in Library" item in the context menu (default value)
 # Показывать пункт "Добавить в библиотеку" в контекстном меню (значение по умолчанию)
@@ -1242,7 +1291,7 @@ PrintCMDContext -Hide
 
 # Hide the "Send to" item from the folders context menu
 # Скрыть пункт "Отправить" из контекстного меню папок
-#SendToContext -Hide
+SendToContext -Hide
 
 # Show the "Send to" item in the folders context menu (default value)
 # Показывать пункт "Отправить" в контекстном меню папок (значение по умолчанию)
@@ -1274,7 +1323,7 @@ RichTextDocumentNewContext -Remove
 
 # Remove the "Compressed (zipped) Folder" item from the "New" context menu
 # Удалить пункт "Сжатая ZIP-папка" из контекстного меню "Создать"
-#CompressedFolderNewContext -Remove
+CompressedFolderNewContext -Remove
 
 # Add the "Compressed (zipped) Folder" item from the "New" context menu (default value)
 # Восстановить пункт "Сжатая ZIP-папка" в контекстном меню "Создать" (значение по умолчанию)
@@ -1298,7 +1347,7 @@ UseStoreOpenWith -Hide
 
 # Hide the "Previous Versions" tab from files and folders context menu and also the "Restore previous versions" context menu item
 # Скрыть вкладку "Предыдущие версии" в свойствах файлов и папок, а также пункт контекстного меню "Восстановить прежнюю версию"
-#PreviousVersionsPage -Hide
+PreviousVersionsPage -Hide
 
 # Show the "Previous Versions" tab from files and folders context menu and also the "Restore previous versions" context menu item (default value)
 # Отображать вкладку "Предыдущие версии" в свойствах файлов и папок, а также пункт контекстного меню "Восстановить прежнюю версию" (значение по умолчанию)
