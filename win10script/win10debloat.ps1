@@ -723,8 +723,8 @@ $Bloatware = @(
         Write-Host "Trying to remove $Bloat."
     }
 
-    Write-Host "Installing Windows Media Player..."
-	Enable-WindowsOptionalFeature -Online -FeatureName "WindowsMediaPlayer" -NoRestart -WarningAction SilentlyContinue | Out-Null
+    #Write-Host "Installing Windows Media Player..."
+	#Enable-WindowsOptionalFeature -Online -FeatureName "WindowsMediaPlayer" -NoRestart -WarningAction SilentlyContinue | Out-Null
 
     #Stops edge from taking over as the default .PDF viewer    
     Write-Host "Stopping Edge from taking over as the default .PDF viewer"

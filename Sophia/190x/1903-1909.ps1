@@ -806,7 +806,7 @@ if ((Get-ItemPropertyValue -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion
 # Отключить режим гибернации, если устройство не является ноутбуком
 if ((Get-CimInstance -ClassName Win32_ComputerSystem).PCSystemType -ne 2)
 {
-	POWERCFG /HIBERNATE OFF
+	POWERCFG -h /type reduced
 }
 
 # Change the %TEMP% environment variable path to the %SystemDrive%\Temp (both machine-wide, and for the current user)

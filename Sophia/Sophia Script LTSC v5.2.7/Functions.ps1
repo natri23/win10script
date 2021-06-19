@@ -2,7 +2,7 @@
 	.SYNOPSIS
 	The TAB completion for functions and their arguments
 
-	Version: v5.10.7
+	Version: v5.2.7
 	Date: 13.06.2021
 
 	Copyright (c) 2014–2021 farag
@@ -66,7 +66,7 @@ function Sophia
 
 Clear-Host
 
-$Host.UI.RawUI.WindowTitle = "Windows 10 Sophia Script v5.10.7 | Made with $([char]::ConvertFromUtf32(0x1F497)) of Windows 10 | $([char]0x00A9) farag & oz-zo, 2014–2021"
+$Host.UI.RawUI.WindowTitle = "Windows 10 Sophia Script for LTSC v5.2.7 | Made with $([char]::ConvertFromUtf32(0x1F497)) of Windows 10 | $([char]0x00A9) farag & oz-zo, 2014–2021"
 
 Remove-Module -Name Sophia -Force -ErrorAction Ignore
 Import-Module -Name $PSScriptRoot\Manifest\Sophia.psd1 -PassThru -Force
