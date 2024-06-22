@@ -1,0 +1,12 @@
+- Cai dat Office phien ban tuy thich bang Office Tool Plus: chon Install Office > Architechture: 64bit > Products: Add products > bo chon OneDrive, OneNote > Start deploy
+
+KICH HOAT CACH 1: https://github.com/massgravel/Microsoft-Activation-Scripts
+- Mo Powershell (Admin) va go lenh: irm https://get.activated.win | iex
+	+ neu bao loi thi go lenh nay truoc: [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12
+- Chon [4] Online KMS > chon [2] Activate - Office > chon [4] Install Auto-Renewal
+- Mo Word > File > Account > Office Updates > Disable Updates
+
+KICH HOAT CACH 2:
+- Chay file Office.Retail.to.VolumeC2R-R2V-AIO de Convert Office Retail to Volume
+- Chay file "Script_Kich_hoat_Windows_va_Office_Online_6_thang" > chon [1] Kich hoat Windows va Office > chon [4] Tao tac vu Gia han kich hoat
+- Mo Word > File > Account > Office Updates > Disable Updates
