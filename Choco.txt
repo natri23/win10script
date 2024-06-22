@@ -2,4 +2,4 @@
 
 choco feature enable -n allowGlobalconfirmation
 
-choco install googlechrome unikey altap-salamander chocolateygui choco-cleaner vlc sumatrapdf.install 7zip.install everything irfanview|honeyview croc teamviewer|ultraviewer patchcleaner autoruns hijackthis shutup10 windowsxappremover lockhunter driverbooster linkshellextension samsung-magician notepadplusplus.install google-drive-file-stream ublockorigin-chrome checkerplusforgmail-chrome google-translate-chrome disable-nvidia-telemetry nvidia-display-driver sharex hitmanpro opalcalc malwarebytes vcredist-all file-converter -y --ignore-checksums
+choco install googlechrome unikey altap-salamander chocolateygui choco-cleaner vlc sumatrapdf.install 7zip.install everything irfanview|honeyview croc teamviewer|ultraviewer patchcleaner autoruns hijackthis shutup10 windowsxappremover lockhunter driverbooster linkshellextension samsung-magician notepadplusplus.install google-drive-file-stream ublockorigin-chrome checkerplusforgmail-chrome google-translate-chrome disable-nvidia-telemetry nvidia-display-driver sharex regjump hitmanpro opalcalc malwarebytes vcredist-all file-converter -y --ignore-checksums
