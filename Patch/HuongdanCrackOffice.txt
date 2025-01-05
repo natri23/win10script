@@ -3,7 +3,7 @@
 KICH HOAT CACH 1: https://github.com/massgravel/Microsoft-Activation-Scripts
 - Mo Powershell (Admin) va go lenh: irm https://get.activated.win | iex
 	+ neu bao loi thi go lenh nay truoc: [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12
-- Chon [4] Online KMS > chon [2] Activate - Office > chon [4] Install Auto-Renewal
+- Chon [4] Online KMS > chon [2] Activate - Office > kiem tra xem [5] Auto-Renewal... da Enabled chua, neu chua thi go 5 Enter
 - Mo Word > File > Account > Office Updates > Disable Updates
 
 KICH HOAT CACH 2:
