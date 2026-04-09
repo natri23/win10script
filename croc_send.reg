@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\SendWithCroc]
+@="Send with Croc"
+
+[HKEY_CLASSES_ROOT\*\shell\SendWithCroc\command]
+@="\"C:\\Download\\Linux\\croc_send.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\SendWithCroc]
+@="Send folder with Croc"
+
+[HKEY_CLASSES_ROOT\Directory\shell\SendWithCroc\command]
+@="\"C:\\Download\\Linux\\croc_send.bat\" \"%1\""

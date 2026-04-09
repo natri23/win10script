@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\ShareWithQR]
+@="Share with QR"
+"Icon"="imageres.dll,174"
+
+[HKEY_CLASSES_ROOT\*\shell\ShareWithQR\command]
+@="\"C:\\Download\\Linux\\Share_with_dufsqr.bat\" \"%1\""
+"Icon"="imageres.dll,174"
+
+[HKEY_CLASSES_ROOT\Directory\shell\ShareWithQR]
+@="Share folder with QR"
+"Icon"="imageres.dll,174"
+
+[HKEY_CLASSES_ROOT\Directory\shell\ShareWithQR\command]
+@="\"C:\\Download\\Linux\\Share_with_dufsqr.bat\" \"%1\""
+"Icon"="imageres.dll,174"
