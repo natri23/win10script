@@ -1,11 +1,5 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\*\shell\ShareWithCopyparty]
-@="Share with copyparty"
-
-[HKEY_CLASSES_ROOT\*\shell\ShareWithQR\command]
-@="\"C:\\Softs\\Share_with_copyparty.bat\" \"%1\""
-
 [HKEY_CLASSES_ROOT\Directory\shell\ShareWithCopyparty]
 @="Share folder with copyparty"
 
