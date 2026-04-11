@@ -1,6 +1,8 @@
 # win10script 
 This is the Ultimate Windows 10 Script fork from https://github.com/ChrisTitusTech/win10script
 
+Actually, now it's just random stuffs I collected to setup a new Windows install
+
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JI0Eu'))
 ```
