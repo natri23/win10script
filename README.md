@@ -8,7 +8,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JI0Eu'))
 ```
 My modifications:
  - No Windows Restore point creation
- - No Lơw UAC
+ - No Low UAC
  - No Disable Storage Sense, Superfetch
  - No Show all tray icons
  - Remove BingWeather, StickyNotes, Windows.Photos
