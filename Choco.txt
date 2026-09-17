@@ -1,7 +1,7 @@
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command " [System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
 choco feature enable -n allowGlobalconfirmation
 
-choco install googlechrome unikey altap-salamander chocolateygui choco-cleaner vlc sumatrapdf.install 7zip.install everything irfanview|honeyview croc meld wiztree sharex regjump bleachbit ultraviewer patchcleaner autoruns hijackthis shutup10 windowsxappremover lockhunter driverbooster linkshellextension samsung-magician notepadplusplus.install google-drive-file-stream ublockorigin-chrome checkerplusforgmail-chrome google-translate-chrome disable-nvidia-telemetry nvidia-display-driver  hitmanpro opalcalc malwarebytes vcredist-all file-converter -y --ignore-checksums
-
-
+choco install unikey altap-salamander chocolateygui choco-cleaner vlc sumatrapdf.install 7zip.install everything irfanview|honeyview croc meld wiztree sharex regjump bleachbit ultraviewer patchcleaner autoruns hijackthis shutup10 windowsxappremover lockhunter driverbooster linkshellextension samsung-magician notepadplusplus.install google-drive-file-stream ublockorigin-chrome checkerplusforgmail-chrome google-translate-chrome disable-nvidia-telemetry nvidia-display-driver  hitmanpro opalcalc malwarebytes vcredist-all file-converter -y --ignore-checksums
