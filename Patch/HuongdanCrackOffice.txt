@@ -1,4 +1,4 @@
-- Cai dat Office phien ban tuy thich bang Office Tool Plus: chon Install Office > Architechture: 64bit > Products: Add products > bo chon OneDrive, OneNote > Start deploy
+- Cai dat Office phien ban tuy thich bang Office Tool Plus: chon Install Office > Architechture: 64bit > Update channel: Office 2024 Perpetual Enterprise > Products: Add products > Office LTSC 2024 > bo chon OneDrive, OneNote, Acces... > Start deploy
 
 KICH HOAT CACH 1: https://github.com/massgravel/Microsoft-Activation-Scripts
 - Mo Powershell (Admin) va go lenh: irm https://get.activated.win | iex
